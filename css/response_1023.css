@@ -1,0 +1,820 @@
+@media print,
+(max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 14px;
+        --font_size_title: 30px;
+    }
+
+
+    .block.big_m
+    {
+        margin-bottom: 80px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 24px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    .header_wrap
+    {
+        height: auto !important;
+    }
+
+
+    header,
+    header.fixed
+    {
+        position: fixed;
+        z-index: 101;
+        top: 0;
+        left: 0;
+
+        width: 325px;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        margin: 0;
+        padding: 0;
+
+        transition: transform .3s linear;
+        transform: translateX(-100%);
+        animation: none;
+
+        border: none;
+        background: #fff;
+    }
+
+    header.show
+    {
+        transform: translateX(0);
+    }
+
+
+    header .scroll
+    {
+        display: flex;
+        overflow: auto;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        padding: 24px 0;
+
+        overscroll-behavior-y: contain;
+    }
+
+    header .scroll > *
+    {
+        width: 100%;
+    }
+
+
+    header .col
+    {
+        display: block;
+        order: 2;
+
+        width: 100%;
+    }
+
+    header .col ~ .col
+    {
+        margin-top: 24px;
+    }
+
+
+    header .location
+    {
+        font-size: 13px;
+    }
+
+
+    header .logo
+    {
+        display: none;
+    }
+
+
+    header .callback_btn
+    {
+        margin-top: 4px;
+        margin-left: 0;
+    }
+
+
+    header .socials
+    {
+        justify-content: flex-start;
+
+        width: 100%;
+        margin-top: 24px;
+    }
+
+
+    header .menu
+    {
+        display: block;
+
+        margin: 0 0 40px;
+        padding-bottom: 40px;
+
+        border-bottom: 1px solid #d3d3d3;
+    }
+
+
+    header .menu_item + .menu_item
+    {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+
+    header .menu_item > a
+    {
+        font-size: 18px;
+        line-height: 24px;
+
+        display: block;
+
+        height: auto;
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header
+    {
+        display: block;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_desc
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .desc
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        line-height: 24px;
+    }
+
+
+    .text_block h2
+    {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+
+    .text_block * + h2,
+    .text_block * + h3
+    {
+        margin-top: 60px;
+    }
+
+
+    .text_block > *,
+    .text_block .cols .col > *,
+    .text_block .image_block > div > *
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .text_block hr
+    {
+        margin: 60px 0;
+    }
+
+
+    .text_block .specialists
+    {
+        margin: 60px 0;
+    }
+
+
+    .text_block .image_block
+    {
+        margin: 60px 0;
+    }
+
+    .text_block .image_block .image
+    {
+        padding-bottom: 40px;
+    }
+
+    .text_block .image_block .image:before
+    {
+        left: 40px;
+
+        height: calc(100% - 40px);
+    }
+
+
+    .text_block blockquote,
+    .text_block q
+    {
+        font-size: 16px;
+        line-height: 24px;
+
+        margin: 40px 0;
+        padding-left: 24px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .cont
+    {
+        min-height: 400px;
+    }
+
+
+    .main_slider .data
+    {
+        width: calc(50% - 35px);
+    }
+
+
+    .main_slider .title
+    {
+        line-height: calc(100% + 4px);
+    }
+
+
+    .main_slider .desc
+    {
+        line-height: 22px;
+    }
+
+
+    .main_slider .btn
+    {
+        padding: 10px 18px;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .service
+    {
+        line-height: 20px;
+
+        padding: 23px 19px 19px;
+    }
+
+
+    .services .service .icon
+    {
+        margin-bottom: 20px;
+    }
+
+
+
+    /*-----------
+        Cases
+    -----------*/
+    .cases .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+    .cases .item:nth-child(3n+1) .head:after,
+    .cases .item:nth-child(3n) .head:after
+    {
+        display: none;
+    }
+
+    .cases .item:nth-child(2n+1) .head:after
+    {
+        position: absolute;
+        right: 100%;
+        bottom: -1px;
+        left: auto;
+
+        display: block;
+
+        width: 100vw;
+        height: 1px;
+
+        content: '';
+
+        background: #d3d3d3;
+    }
+
+    .cases .item:nth-child(2n) .head:after
+    {
+        position: absolute;
+        bottom: -1px;
+        left: 100%;
+
+        display: block;
+
+        width: 100vw;
+        height: 1px;
+
+        content: '';
+
+        background: #d3d3d3;
+    }
+
+
+    .cases .item .name
+    {
+        font-size: 18px;
+        line-height: 24px;
+
+        margin-bottom: 8px;
+    }
+
+
+    .cases .item .desc
+    {
+        line-height: 20px;
+
+        height: 40px;
+    }
+
+
+    .cases .item .link a
+    {
+        padding-top: 30px;
+    }
+
+
+    .cases .item .link a
+    {
+        padding: 10px 18px;
+    }
+
+
+
+    /*-----------
+        Media
+    -----------*/
+    .media .data
+    {
+        width: 100%;
+    }
+
+
+    .media .video:before
+    {
+        width: calc(100% + 24px);
+        height: calc(100% - 60px);
+    }
+
+
+    .media .video .btn
+    {
+        width: 140px;
+    }
+
+
+    .media .video
+    {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+
+
+    /*------------
+        Stats
+    ------------*/
+    .stats .block_head
+    {
+        padding-bottom: 10px;
+    }
+
+
+    .stats .row
+    {
+        margin-left: -24px;
+    }
+
+    .stats .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-left: 24px;
+    }
+
+
+    .stats .item:nth-child(4) ~ .item:after
+    {
+        display: block;
+    }
+
+
+    .stats .item:nth-child(6) ~ .item
+    {
+        padding-bottom: 0;
+    }
+
+    .stats .item:nth-child(6) ~ .item:after
+    {
+        display: none;
+    }
+
+
+
+    /*----------------
+        Boss quote
+    ----------------*/
+    .boss_quote
+    {
+        padding-top: 108px;
+    }
+
+
+    .boss_quote .data
+    {
+        width: 460px;
+        padding: 40px;
+    }
+
+
+    .boss_quote .data .quote
+    {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+
+    .boss_quote .data .quote:before
+    {
+        display: none;
+    }
+
+
+    .boss_quote .data:before
+    {
+        width: 64px;
+        height: 64px;
+
+        border-width: 32px;
+    }
+
+
+    .boss_quote .photo
+    {
+        right: -80px;
+        left: auto;
+
+        margin-left: auto;
+    }
+
+    .boss_quote .photo:before
+    {
+        left: -240px;
+
+        width: 400px;
+        height: 360px;
+    }
+
+
+    .boss_quote .photo img
+    {
+        width: 340px;
+        height: 476px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+    .articles .article .thumb
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .articles .article .date
+    {
+        font-size: 13px;
+        line-height: 21px;
+
+        padding: 4px 16px;
+    }
+
+
+    .articles .article .name
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+
+    /*-------------
+        Persons
+    -------------*/
+    .persons .person
+    {
+        margin-top: 0;
+    }
+
+    .persons .person + .person
+    {
+        margin-top: 40px;
+    }
+
+
+    .persons .person .photo
+    {
+        width: 100%;
+    }
+
+
+    .persons .person .photo img
+    {
+        position: relative;
+        left: 0;
+
+        transform: none;
+    }
+
+
+    .persons .person .data
+    {
+        order: 2;
+
+        width: 100%;
+    }
+
+    .persons .person .data:before,
+    .persons .person .photo + .data:before
+    {
+        right: auto;
+        left: -24px;
+
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+
+    .persons .person .name
+    {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+
+    .persons .person .contacts
+    {
+        line-height: 24px;
+
+        margin-top: 20px;
+        padding-top: 24px;
+    }
+
+
+    .persons .person .desc
+    {
+        margin-top: 24px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages
+    {
+        padding: 70px 0;
+    }
+
+
+    .advantages .item
+    {
+        padding: 0 20px;
+    }
+
+
+
+    /*-----------------
+        Person info
+    -----------------*/
+    .person_info .contacts
+    {
+        line-height: 24px;
+    }
+
+
+
+    /*------------
+        Certs.
+    ------------*/
+    .certs .item .thumb .icon
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .certs .item .thumb .icon svg
+    {
+        width: 24px;
+        height: 24px;
+    }
+
+
+
+    /*------------
+        Videos
+    ------------*/
+    .videos .video .btn
+    {
+        width: 112px;
+        padding: 16px;
+    }
+
+
+
+    /*-----------------
+        Specialists
+    -----------------*/
+    .specialists .person
+    {
+        padding: 24px;
+    }
+
+
+
+    /*--------------
+        Branches
+    --------------*/
+    .branches .tabs
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 0 -24px 24px;
+        padding: 0 24px;
+
+        white-space: nowrap;
+
+        scroll-padding: 0 24px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .branches .tabs::-webkit-scrollbar
+    {
+        display: none !important;
+
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .branches .tabs::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .branches .tabs .btn
+    {
+        display: inline-block;
+        flex-direction: row;
+
+        width: 328px;
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+        white-space: normal;
+
+        scroll-snap-align: start;
+    }
+
+    .branches .tabs .btn + .btn
+    {
+        margin-left: 20px;
+    }
+
+
+    .branches .tabs .name
+    {
+        font-size: 16px;
+
+        margin-bottom: 12px;
+    }
+
+
+    .branches .map
+    {
+        height: 460px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .col_left
+    {
+        width: 100%;
+    }
+
+
+    footer .col_center
+    {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
+    footer .logo
+    {
+        margin-bottom: 24px;
+    }
+
+
+    footer .copyright > * + *
+    {
+        margin-top: 8px;
+    }
+
+
+    footer .title
+    {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    #map_modal .map
+    {
+        height: 460px;
+    }
+}

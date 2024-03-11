@@ -1,0 +1,985 @@
+@media print,
+(max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 14px;
+        --font_size_title: 28px;
+    }
+
+
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction
+    {
+        left: 24px;
+
+        margin-left: 0;
+    }
+
+
+    .swiper-button-next,
+    .swiper-button-prev
+    {
+        display: none;
+    }
+
+
+    .block
+    {
+        margin-bottom: 60px;
+    }
+
+    .block.big_m
+    {
+        margin-bottom: 70px;
+    }
+
+    .block.border
+    {
+        padding-bottom: 60px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 20px;
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header .contacts
+    {
+        display: block;
+    }
+
+
+    .mob_header .callback_btn
+    {
+        margin-top: 4px;
+        margin-left: auto;
+    }
+
+
+    .mob_header .socials
+    {
+        display: none;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        margin-bottom: 40px;
+        padding-top: 24px;
+    }
+
+
+    .page_title
+    {
+        margin-top: 20px;
+    }
+
+
+    .page_desc
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head,
+    .block_head.small_m
+    {
+        margin-bottom: 30px;
+    }
+
+
+    .block_head .title br
+    {
+        display: none;
+    }
+
+
+    .block_head .desc
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns > *,
+    .form .columns > *.width2of3,
+    .form .columns > *.width1of3
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+
+    .form .line
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .form .file,
+    .form .agree
+    {
+        margin-top: -8px;
+    }
+
+
+    .form .checkbox
+    {
+        line-height: 16px;
+    }
+
+
+    .form .submit_btn
+    {
+        padding: 10px 26px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        line-height: 22px;
+    }
+
+
+    .text_block .columns
+    {
+        column-gap: 0;
+        column-count: 1;
+    }
+
+
+    .text_block .cols .col
+    {
+        width: 100%;
+    }
+
+    .text_block .cols .col + .col
+    {
+        margin-top: 40px;
+    }
+
+
+    .text_block ul li:before
+    {
+        top: 8px;
+    }
+
+
+    .text_block .image_block .image,
+    .text_block .image_block > div
+    {
+        width: 100%;
+    }
+
+
+    .text_block .table_wrap
+    {
+        overflow: auto;
+
+        width: 100%;
+    }
+
+
+    .text_block table
+    {
+        width: 900px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .swiper-slide
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .main_slider .cont
+    {
+        order: 2;
+
+        min-height: auto;
+        padding-top: 48px;
+        padding-bottom: 80px;
+    }
+
+
+    .main_slider .data
+    {
+        width: 100%;
+    }
+
+
+    .main_slider .title br
+    {
+        display: none;
+    }
+
+
+    .main_slider .img
+    {
+        position: relative;
+        left: 0;
+
+        width: 100%;
+        height: auto;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .row > *
+    {
+        width: calc(50% + 1px);
+    }
+
+
+    .services .service .icon
+    {
+        margin-bottom: 25px;
+    }
+
+
+    .services .service .icon1 svg
+    {
+        width: 50px;
+        height: 30px;
+    }
+
+    .services .service .icon2 svg
+    {
+        width: 41px;
+        height: 30px;
+    }
+
+    .services .service .icon3 svg
+    {
+        width: 38px;
+        height: 30px;
+    }
+
+    .services .service .icon4 svg
+    {
+        width: 42px;
+        height: 30px;
+    }
+
+    .services .service .icon5 svg
+    {
+        width: 53px;
+        height: 30px;
+    }
+
+    .services .service .icon6 svg
+    {
+        width: 61px;
+        height: 30px;
+    }
+
+    .services .service .icon7 svg
+    {
+        width: 41px;
+        height: 30px;
+    }
+
+    .services .service .icon8 svg
+    {
+        width: 30px;
+        height: 30px;
+    }
+
+    .services .service .icon9 svg
+    {
+        width: 42px;
+        height: 30px;
+    }
+
+    .services .service .icon10 svg
+    {
+        width: 48px;
+        height: 30px;
+    }
+
+    .services .service .icon11 svg
+    {
+        width: 38px;
+        height: 30px;
+    }
+
+    .services .service .icon12 svg
+    {
+        width: 38px;
+        height: 30px;
+    }
+
+    .services .service .icon13 svg
+    {
+        width: 47px;
+        height: 30px;
+    }
+
+    .services .service .icon14 svg
+    {
+        width: 49px;
+        height: 30px;
+    }
+
+    .services .service .icon15 svg
+    {
+        width: 30px;
+        height: 30px;
+    }
+
+    .services .service .icon16 svg
+    {
+        width: 40px;
+        height: 30px;
+    }
+
+
+
+    /*-----------
+        Media
+    -----------*/
+    .media .data
+    {
+        padding-top: 24px;
+        padding-left: 32px;
+    }
+
+    .media .data .logo
+    {
+        width: 140px;
+        height: 171px;
+    }
+
+
+
+    /*------------
+        Stats
+    ------------*/
+    .stats .block_head
+    {
+        padding-bottom: 0;
+    }
+
+
+    .stats .row > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+
+    /*-----------
+        Steps
+    -----------*/
+    .steps
+    {
+        padding: 60px 0;
+    }
+
+
+    .steps .swiper
+    {
+        padding: 0;
+    }
+
+
+    .steps .swiper-slide
+    {
+        visibility: visible;
+
+        width: 304px;
+
+        pointer-events: auto;
+
+        opacity: 1;
+    }
+
+
+    .steps .step
+    {
+        padding: 0;
+    }
+
+
+
+    /*----------------
+        Boss quote
+    ----------------*/
+    .boss_quote
+    {
+        padding-top: 60px;
+    }
+
+
+    .boss_quote .data
+    {
+        order: 2;
+
+        width: 100%;
+        padding-bottom: 32px;
+        padding-left: 32px;
+    }
+
+    .boss_quote .data:before
+    {
+        display: none;
+    }
+
+
+    .boss_quote .data .quote:after
+    {
+        right: -16px;
+    }
+
+
+    .boss_quote .data .author
+    {
+        margin-top: 30px;
+    }
+
+
+    .boss_quote .photo
+    {
+        position: relative;
+        right: 0;
+        left: 0;
+
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .boss_quote .photo:after
+    {
+        display: none;
+    }
+
+    .boss_quote .photo:before
+    {
+        display: none;
+    }
+
+
+    .boss_quote .photo img
+    {
+        width: 320px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+
+
+    /*-------------
+        Clients
+    -------------*/
+    .clients .swiper
+    {
+        padding: 0;
+    }
+
+
+    .clients .swiper-slide
+    {
+        width: auto;
+    }
+
+
+    .clients .item
+    {
+        height: 80px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .row
+    {
+        margin-left: 0;
+    }
+
+    .articles .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .articles .swiper
+    {
+        padding: 0;
+    }
+
+
+    .articles .swiper-slide
+    {
+        visibility: visible;
+
+        width: 320px;
+
+        pointer-events: auto;
+
+        opacity: 1;
+    }
+
+
+
+    /*-----------------
+        Get consult
+    -----------------*/
+    .get_consult .block_title
+    {
+        font-size: 26px;
+        line-height: 32px;
+
+        margin-bottom: 32px;
+    }
+
+
+    .get_consult .data
+    {
+        padding: 29px;
+    }
+
+
+
+    /*-------------
+        Persons
+    -------------*/
+    .persons .person .data
+    {
+        padding: 28px 0;
+    }
+
+
+    .persons .person .name
+    {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+
+    .persons .person .post
+    {
+        line-height: 18px;
+    }
+
+
+    .persons .person .contacts .email .icon
+    {
+        top: 0;
+    }
+
+
+    .persons .person .desc
+    {
+        margin-top: 20px;
+    }
+
+
+
+    /*-------------
+        Ratings
+    -------------*/
+    .ratings .swiper
+    {
+        padding: 0;
+    }
+
+
+    .ratings .swiper-slide.visible
+    {
+        visibility: visible;
+
+        pointer-events: auto;
+
+        opacity: 1;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages
+    {
+        padding: 60px 0;
+    }
+
+
+    .advantages .row
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 0 -24px;
+        padding: 10px 24px 0;
+
+        white-space: nowrap;
+
+        scroll-padding: 0 24px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .advantages .row::-webkit-scrollbar
+    {
+        display: none !important;
+
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .advantages .row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .advantages .row > *
+    {
+        display: inline-block;
+
+        width: 240px;
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+        white-space: normal;
+
+        scroll-snap-align: start;
+    }
+
+    .advantages .row > * + *
+    {
+        margin-left: -4px;
+    }
+
+
+    .advantages .item
+    {
+        line-height: 21px;
+
+        padding: 0 24px;
+    }
+
+
+    .advantages .item .name
+    {
+        height: 42px;
+    }
+
+
+
+    /*-----------------
+        Person info
+    -----------------*/
+    .person_info .contacts
+    {
+        line-height: 24px;
+    }
+
+
+
+    /*------------
+        Certs.
+    ------------*/
+    .certs .item .thumb .icon
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .certs .item .thumb .icon svg
+    {
+        width: 24px;
+        height: 24px;
+    }
+
+
+
+    /*------------
+        Videos
+    ------------*/
+    .videos .video .btn
+    {
+        width: 112px;
+        padding: 16px;
+    }
+
+
+
+    /*-----------------
+        Person info
+    -----------------*/
+    .person_info .data
+    {
+        width: 100%;
+    }
+
+
+    .person_info .business_card
+    {
+        position: relative;
+        bottom: 0;
+
+        margin-top: 24px;
+    }
+
+
+    .person_info .contacts
+    {
+        margin-top: 24px;
+        padding-top: 24px;
+    }
+
+
+    .person_info .desc
+    {
+        width: 100%;
+    }
+
+
+
+    /*------------
+        Certs.
+    ------------*/
+    .certs .swiper
+    {
+        padding: 0;
+    }
+
+
+    .certs .swiper-slide
+    {
+        visibility: visible;
+
+        width: 220px;
+
+        pointer-events: auto;
+
+        opacity: 1;
+    }
+
+
+
+    /*------------
+        Videos
+    ------------*/
+    .videos .swiper
+    {
+        padding: 0;
+    }
+
+
+    .videos .swiper-slide
+    {
+        visibility: visible;
+
+        width: 296px;
+
+        pointer-events: auto;
+
+        opacity: 1;
+    }
+
+
+
+    /*-----------------
+        Specialists
+    -----------------*/
+    .specialists .swiper
+    {
+        padding: 0;
+    }
+
+
+    .specialists .swiper-slide
+    {
+        visibility: visible;
+
+        width: 296px;
+
+        pointer-events: auto;
+
+        opacity: 1;
+    }
+
+
+    .specialists .person
+    {
+        margin-top: 108px;
+    }
+
+
+
+    /*--------------
+        Branches
+    --------------*/
+    .branches .tabs
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 0 -24px 24px;
+        padding: 0 24px;
+
+        white-space: nowrap;
+
+        scroll-padding: 0 24px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .branches .tabs::-webkit-scrollbar
+    {
+        display: none !important;
+
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .branches .tabs::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .branches .tabs .btn
+    {
+        display: inline-block;
+        flex-direction: row;
+
+        width: 328px;
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+        white-space: normal;
+
+        scroll-snap-align: start;
+    }
+
+    .branches .tabs .btn + .btn
+    {
+        margin-left: 20px;
+    }
+
+
+    .branches .tabs .name
+    {
+        font-size: 16px;
+
+        margin-bottom: 12px;
+    }
+
+
+
+    /*-----------
+        Cases
+    -----------*/
+    .cases .row
+    {
+        margin-left: 0;
+    }
+
+    .cases .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .cases .item:nth-child(2n+1) .head:after,
+    .cases .item:nth-child(2n) .head:after
+    {
+        display: none;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding-bottom: 24px;
+    }
+
+
+    footer .col_center
+    {
+        margin-top: 24px;
+    }
+
+
+    footer .services_links,
+    footer .menu
+    {
+        display: none;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        padding: 40px;
+    }
+
+
+    .modal_title
+    {
+        font-size: 26px;
+        line-height: 34px;
+
+        margin-bottom: 30px;
+    }
+}

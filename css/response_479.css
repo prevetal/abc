@@ -1,0 +1,158 @@
+@media (max-width: 479px)
+{
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination > * + *
+    {
+        margin-left: 4px;
+    }
+
+
+    .pagination .prev
+    {
+        margin-right: 12px;
+    }
+
+    .pagination .next
+    {
+        margin-left: 12px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 16px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .submit_btn
+    {
+        width: 100%;
+    }
+
+
+
+    /*--------------
+        Services
+    --------------*/
+    .services .row > *
+    {
+        width: calc(100% + 1px);
+    }
+
+
+
+    /*-----------
+        Media
+    -----------*/
+    .media .video .btn
+    {
+        width: 124px;
+        padding: 16px;
+    }
+
+
+
+    /*------------
+        Stats
+    ------------*/
+    .stats .item .val
+    {
+        font-size: 44px;
+
+        height: 44px;
+        margin-bottom: 12px;
+    }
+
+    .stats .item .val small
+    {
+        font-size: 24px;
+    }
+
+
+
+    /*----------------
+        Boss quote
+    ----------------*/
+    .boss_quote .data
+    {
+        padding: 24px;
+    }
+
+    .boss_quote .data .quote:after
+    {
+        top: 0;
+        right: 0;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .swiper-slide
+    {
+        width: 296px;
+    }
+
+
+
+    /*-----------------
+        Get consult
+    -----------------*/
+    .get_consult .block_title
+    {
+        font-size: 24px;
+        line-height: 28px;
+
+        margin-bottom: 28px;
+    }
+
+
+    .get_consult .data
+    {
+        padding: 25px;
+    }
+
+
+
+    /*-------------
+        Persons
+    -------------*/
+    .persons .person .data
+    {
+        padding: 24px 0 40px;
+    }
+
+
+    .persons .person .name
+    {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+
+
+    /*--------------
+        Branches
+    --------------*/
+    .branches .tabs .btn
+    {
+        width: 296px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+}

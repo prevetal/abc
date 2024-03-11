@@ -1,0 +1,163 @@
+.swiper-button-next,
+.swiper-button-prev
+{
+    top: 2px;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 33px;
+    height: 21px;
+    margin: 0;
+
+    transition: color .2s linear;
+    transform: none;
+
+    color: #2a3c7b;
+}
+
+.swiper-button-next.center,
+.swiper-button-prev.center
+{
+    top: 0;
+    bottom: 0;
+
+    margin: auto 0;
+}
+
+
+.swiper-button-prev
+{
+    left: -63px;
+}
+
+.swiper-button-next
+{
+    right: -63px;
+}
+
+
+.swiper-button-next:after,
+.swiper-button-prev:after
+{
+    display: none;
+}
+
+
+.swiper-button-next .icon,
+.swiper-button-prev .icon
+{
+    display: block;
+
+    width: 33px;
+    height: 21px;
+}
+
+.swiper-button-prev .icon
+{
+    transform: rotate(180deg);
+}
+
+
+.swiper-button-next .icon + .icon,
+.swiper-button-prev .icon + .icon
+{
+    display: none;
+}
+
+
+.swiper-button-next:hover .icon,
+.swiper-button-prev:hover .icon
+{
+    display: none;
+}
+
+.swiper-button-next:hover .icon + .icon,
+.swiper-button-prev:hover .icon + .icon
+{
+    display: block;
+}
+
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled
+{
+    opacity: 1;
+    color: #d3d3d3;
+}
+
+
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet
+{
+    margin: 0;
+}
+
+
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction
+{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: auto;
+    height: 10px;
+    margin-left: 165px;
+
+    pointer-events: none;
+}
+
+
+.swiper-pagination-bullet
+{
+    display: block;
+
+    width: 10px;
+    height: 10px;
+
+    transition: .2s linear;
+    pointer-events: auto;
+
+    opacity: 1;
+    border: 1px solid #7593d0;
+    border-radius: 0;
+    background: none;
+}
+
+.swiper-pagination-bullet + .swiper-pagination-bullet
+{
+    margin-left: 30px !important;
+}
+
+
+.swiper-pagination-bullet:hover
+{
+    border-color: #fff;
+}
+
+
+.swiper-pagination-bullet.active
+{
+    border-color: #fff;
+    background: #fff;
+}
+
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet
+{
+    margin: 0;
+}
