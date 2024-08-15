@@ -1,4 +1,7 @@
 <svg width="0" height="0" class="hidden">
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10" id="ic_arr_hor">
+    <path d="M1 1L5 5L1 9" stroke="currentColor" stroke-width="2"></path>
+  </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.8 7.81" id="ic_arr_ver">
     <path d="M9.79,1,5.9,6.15,2,1H9.79ZM5.9,0H0L5.9,7.81,11.8,0Z" fill="currentColor"></path>
   </symbol>

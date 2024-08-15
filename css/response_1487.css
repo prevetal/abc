@@ -206,6 +206,22 @@
     }
 
 
+    .text_block .image_block .image.bg_left
+    {
+        padding-bottom: 40px;
+        padding-left: 48px;
+    }
+
+
+    .text_block .image_block .image.bg_left:before
+    {
+        left: 0;
+
+        width: calc(100% - 68px);
+        height: calc(100% - 36px);
+    }
+
+
     .text_block blockquote,
     .text_block q
     {
@@ -214,6 +230,22 @@
 
         margin: 50px 0 50px 60px;
         padding-left: 40px;
+    }
+
+
+
+    .content_contacts
+    {
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+
+
+    .text_block .service_steps,
+    .text_block .service_advantages
+    {
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 
 
@@ -589,6 +621,238 @@
     .branches .map
     {
         height: 520px;
+    }
+
+
+
+    /*------------------
+        Free consult
+    ------------------*/
+    .free_consult .data
+    {
+        padding: 40px;
+    }
+
+
+    .free_consult .online
+    {
+        width: 140px;
+        height: 60px;
+    }
+
+
+    .free_consult .info
+    {
+        width: 680px;
+    }
+
+
+    .free_consult .title
+    {
+        font-size: 30px;
+    }
+
+
+    .free_consult .title small
+    {
+        font-size: 24px;
+    }
+
+
+    .free_consult .features .item .name span
+    {
+        font-size: 20px;
+    }
+
+
+    .free_consult .form .submit
+    {
+        padding: 0;
+    }
+
+
+    .free_consult .img1
+    {
+        width: calc(100% - 780px);
+    }
+
+
+    .free_consult .img2
+    {
+        bottom: -48px;
+        left: 0;
+
+        width: 520px;
+    }
+
+
+
+    /*------------------
+        Service info
+    ------------------*/
+    .service_info .free_consult
+    {
+        margin-bottom: 60px;
+    }
+
+
+    .service_info .content
+    {
+        width: calc(100% - 360px);
+    }
+
+
+    .service_info aside
+    {
+        gap: 24px;
+    }
+
+
+    .service_info .services .title
+    {
+        font-size: 22px;
+
+        margin-bottom: 12px;
+    }
+
+
+    .service_info .services .list > * a
+    {
+        font-size: 14px;
+
+        padding: 11px 19px 10px 15px;
+    }
+
+
+
+    .service_info .callback_form
+    {
+        padding: 32px;
+    }
+
+
+    .service_info .callback_form .title
+    {
+        font-size: 22px;
+    }
+
+
+    .service_info .callback_form .desc
+    {
+        font-size: 14px;
+
+        margin-top: 12px;
+    }
+
+
+    .service_info .callback_form .form .input
+    {
+        height: 44px;
+        padding: 2px 15px 0;
+    }
+
+
+
+    /*----------------------
+        Content contacts
+    ----------------------*/
+    .content_contacts .label
+    {
+        font-size: 15px;
+
+        margin-left: 40px;
+    }
+
+
+    .content_contacts .phone
+    {
+        font-size: 24px;
+
+        margin-left: 40px;
+    }
+
+
+    .content_contacts .img
+    {
+        right: -20px;
+        bottom: -10px;
+
+        width: 220px;
+    }
+
+
+
+    /*-------------------
+        Service steps
+    -------------------*/
+    .service_steps
+    {
+        padding: 40px 24px;
+    }
+
+
+    .service_steps .block_title
+    {
+        font-size: 28px;
+
+        margin-bottom: 12px;
+    }
+
+
+    .service_steps .block_desc
+    {
+        font-size: 18px;
+
+        margin-bottom: 24px;
+    }
+
+
+    .service_steps .item .number
+    {
+        font-size: 24px;
+
+        margin-bottom: 12px;
+    }
+
+
+
+    /*------------------------
+        Service advantages
+    ------------------------*/
+    .service_advantages
+    {
+        padding: 40px 24px;
+    }
+
+
+    .service_advantages .block_title
+    {
+        font-size: 28px;
+
+        margin-bottom: 24px;
+    }
+
+
+    .service_advantages .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+
+    .service_advantages .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .service_advantages .item .number
+    {
+        font-size: 24px;
+
+        margin-bottom: 12px;
     }
 
 

@@ -152,7 +152,25 @@
 
 
 
-    /*-----------
-        PopUp
-    -----------*/
+    /*------------------
+        Free consult
+    ------------------*/
+    .free_consult .title
+    {
+        font-size: 22px;
+    }
+
+
+    .free_consult .title small
+    {
+        font-size: 16px;
+    }
+
+
+    .free_consult .img2
+    {
+        right: 0;
+
+        width: 240px;
+    }
 }

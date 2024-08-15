@@ -234,7 +234,7 @@
     .text_block * + h2,
     .text_block * + h3
     {
-        margin-top: 70px;
+        margin-top: 60px;
     }
 
 
@@ -265,6 +265,18 @@
     .text_block .image_block > div
     {
         width: calc(50% - 20px);
+    }
+
+
+    .text_block .image_block .image.bg_left
+    {
+        padding-bottom: 40px;
+        padding-left: 40px;
+    }
+
+    .text_block .image_block .image.bg_left:before
+    {
+        width: calc(100% - 60px);
     }
 
 
@@ -928,6 +940,120 @@
         width: calc(33.333% - 24px);
         margin-bottom: 40px;
         margin-left: 24px;
+    }
+
+
+
+    /*------------------
+        Free consult
+    ------------------*/
+    .free_consult .online
+    {
+        width: 120px;
+        height: 40px;
+    }
+
+
+    .free_consult .info
+    {
+        width: 100%;
+    }
+
+
+    .free_consult .title
+    {
+        font-size: 28px;
+
+        margin-bottom: 0;
+    }
+
+
+    .free_consult .title small
+    {
+        font-size: 22px;
+    }
+
+
+    .free_consult .features
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .free_consult .img1
+    {
+        display: none;
+    }
+
+
+    .free_consult .img2
+    {
+        position: relative;
+        bottom: 0;
+        left: 0;
+
+        width: 180px;
+    }
+
+
+
+    /*------------------
+        Service info
+    ------------------*/
+    .service_info .free_consult
+    {
+        margin-bottom: 50px;
+    }
+
+
+    .service_info .content
+    {
+        width: 100%;
+    }
+
+
+    .service_info aside
+    {
+        width: 100%;
+        margin-top: 48px;
+    }
+
+
+
+    .service_info .services .list > * a
+    {
+        min-height: 48px;
+    }
+
+
+
+    .service_info .callback_form
+    {
+        padding: 40px;
+    }
+
+
+
+    /*----------------------
+        Content contacts
+    ----------------------*/
+    .content_contacts .label
+    {
+        margin-left: 48px;
+    }
+
+
+    .content_contacts .phone
+    {
+        margin-left: 60px;
+    }
+
+
+    .content_contacts .img
+    {
+        right: -10px;
+
+        width: 224px;
     }
 
 

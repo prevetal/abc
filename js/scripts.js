@@ -514,6 +514,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		$('html, body').stop().animate({ scrollTop: $activeTabContent.offset().top }, 1000)
 	}
+
+
+	// Services aside
+	$('.service_info .services a.sub_link').click(function(e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active').next().slideToggle(300)
+	})
 })
 
 
