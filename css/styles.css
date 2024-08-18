@@ -873,7 +873,7 @@ header .menu_item > a.active
 }
 
 
-header .sub_menu
+header .menu .sub_menu
 {
     position: absolute;
     z-index: 9;
@@ -892,7 +892,7 @@ header .sub_menu
     background: #f6f6f6;
 }
 
-header .sub_menu:before
+header .menu .sub_menu:before
 {
     position: absolute;
     bottom: 100%;
@@ -927,13 +927,13 @@ header .menu_item > a.touch_link + .sub_menu.show
 }
 
 
-header .sub_menu .row
+header .menu .sub_menu .row
 {
     margin-bottom: -25px;
     margin-left: -70px;
 }
 
-header .sub_menu .row > *
+header .menu .sub_menu .row > *
 {
     width: calc(25% - 70px);
     margin-bottom: 25px;
@@ -941,7 +941,18 @@ header .sub_menu .row > *
 }
 
 
-header .sub_menu a
+header .menu .sub_menu .col + .col
+{
+    margin-top: 0;
+}
+
+header .menu .sub_menu .col > * + *
+{
+    margin-top: 25px;
+}
+
+
+header .menu .sub_menu a
 {
     font-size: 14px;
     font-style: italic;
@@ -960,7 +971,7 @@ header .sub_menu a
 }
 
 
-header .sub_menu a .icon
+header .menu .sub_menu a .icon
 {
     display: flex;
     align-content: center;
@@ -973,7 +984,7 @@ header .sub_menu a .icon
 }
 
 
-header .sub_menu a .icon svg
+header .menu .sub_menu a .icon svg
 {
     display: block;
 
@@ -982,7 +993,7 @@ header .sub_menu a .icon svg
 }
 
 
-header .sub_menu a .name
+header .menu .sub_menu a .name
 {
     align-self: center;
 
@@ -990,10 +1001,60 @@ header .sub_menu a .name
 }
 
 
-header .sub_menu a:hover,
-header .sub_menu a.active
+header .menu .sub_menu a:hover,
+header .menu .sub_menu a.active
 {
     color: #898989;
+}
+
+
+
+header .menu .sub
+{
+    display: none;
+
+    padding-top: 20px;
+    padding-left: 58px;
+}
+
+
+header .menu .sub > * + *
+{
+    margin-top: 10px;
+}
+
+
+header .menu .sub a
+{
+    position: relative;
+
+    padding-left: 19px;
+
+    color: #1b1b1b;
+}
+
+
+header .menu .sub a:before
+{
+    position: absolute;
+    top: 7px;
+    left: 0;
+
+    display: block;
+
+    width: 12px;
+    height: 1px;
+
+    content: '';
+
+    background: #2a3c7b;
+}
+
+
+header .menu .sub a:hover,
+header .menu .sub a.active
+{
+    color: #2a3c7b;
 }
 
 

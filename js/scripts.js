@@ -450,6 +450,14 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 
+	// Sub. menu
+	$('header .menu .sub_menu a.sub_link').click(function (e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active').next().slideToggle(200)
+	})
+
+
 	if (is_touch_device()) {
 		const subMenus = document.querySelectorAll('header .menu .sub_menu')
 

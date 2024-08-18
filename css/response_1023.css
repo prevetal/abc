@@ -162,6 +162,46 @@
     }
 
 
+    header .menu_item .sub_menu,
+    header .menu_item:hover .sub_menu
+    {
+        position: relative;
+        top: 0;
+
+        display: none;
+
+        width: 100%;
+        width: calc(100% + 48px);
+        margin: 20px -24px 0;
+
+        pointer-events: auto;
+
+        opacity: 1;
+    }
+
+
+    header .menu .sub_menu .row
+    {
+        margin-bottom: -20px;
+        margin-left: 0;
+    }
+
+
+    header .menu .sub_menu .row > *
+    {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+
+    header .menu_item > a.touch_link + .sub_menu.show
+    {
+        display: block;
+        visibility: visible;
+    }
+
+
 
     /*-----------------
         Mob. header
