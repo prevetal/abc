@@ -202,6 +202,18 @@
     }
 
 
+    header .menu .sub_menu a .name
+    {
+        width: calc(100% - 60px);
+    }
+
+
+    header .menu .sub_menu a .arr
+    {
+        margin-left: auto;
+    }
+
+
 
     /*-----------------
         Mob. header

@@ -992,7 +992,26 @@
         align-content: flex-start;
         align-items: flex-start;
 
+        margin-bottom: -24px;
         padding-right: 0;
+    }
+
+
+    .free_consult .features .row > *:nth-child(1)
+    {
+        order: 3;
+
+        margin-left: auto;
+    }
+
+    .free_consult .features .row > *:nth-child(2)
+    {
+        order: 2;
+    }
+
+    .free_consult .features .row > *:nth-child(3)
+    {
+        order: 1;
     }
 
 
@@ -1001,6 +1020,13 @@
         line-height: 140%;
 
         width: calc(50% - 12px);
+        margin-bottom: 24px;
+    }
+
+
+    .free_consult .mob_img
+    {
+        display: block;
     }
 
 
@@ -1033,6 +1059,8 @@
     {
         right: 24px;
         bottom: -32px;
+
+        display: none;
 
         width: 200px;
     }

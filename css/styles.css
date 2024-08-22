@@ -941,6 +941,11 @@ header .menu .sub_menu .row > *
 }
 
 
+header .menu .sub_menu .col
+{
+    display: block;
+}
+
 header .menu .sub_menu .col + .col
 {
     margin-top: 0;
@@ -995,9 +1000,31 @@ header .menu .sub_menu a .icon svg
 
 header .menu .sub_menu a .name
 {
-    align-self: center;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
-    width: calc(100% - 58px);
+    width: calc(100% - 69px);
+}
+
+
+header .menu .sub_menu a span
+{
+    max-width: calc(100% - 17px);
+}
+
+
+header .menu .sub_menu a .arr
+{
+    display: block;
+
+    width: 7px;
+    height: 10px;
+    margin-left: 10px;
+
+    transform: rotate(90deg);
 }
 
 
@@ -5076,6 +5103,33 @@ header.fixed .menu_item > a
 }
 
 
+.free_consult .mob_img
+{
+    position: relative;
+
+    display: none;
+
+    width: calc(100% + 48px);
+    height: 94px;
+    margin: 0 -24px 28px;
+
+    background: #2a3c7b;
+}
+
+
+.free_consult .mob_img img
+{
+    position: absolute;
+    bottom: 0;
+    left: 12px;
+
+    display: block;
+
+    width: 230px;
+    max-width: 100%;
+}
+
+
 .free_consult .form
 {
     --form_border_color: #d3d3d3;
@@ -5215,6 +5269,13 @@ header.fixed .menu_item > a
     color: #fff;
     border-color: #2a3c7b;
     background: #2a3c7b;
+}
+
+
+.free_consult .form .submit_btn:hover
+{
+    border-color: #394e98;
+    background: #394e98;
 }
 
 
@@ -5514,10 +5575,18 @@ header.fixed .menu_item > a
     height: 38px;
     padding: 2px 0 0;
 
+    transition: .2s linear;
     text-transform: uppercase;
 
     color: #fff;
-    border: 2px solid;
+    border: 2px solid #fff;
+}
+
+
+.service_info .callback_form .form .submit_btn:hover
+{
+    color: #2a3c7b;
+    background: #fff;
 }
 
 
@@ -5554,10 +5623,17 @@ header.fixed .menu_item > a
     height: 38px;
     padding: 4px 30px 0;
 
+    transition: background .2s linear;
     text-transform: uppercase;
 
     color: #fff;
     background: #2a3c7b;
+}
+
+
+.content_contacts .btn:hover
+{
+    background: #394e98;
 }
 
 
