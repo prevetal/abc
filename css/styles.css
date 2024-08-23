@@ -5331,6 +5331,9 @@ header.fixed .menu_item > a
 
 .service_info aside
 {
+    position: sticky;
+    top: 140px;
+
     display: flex;
     flex-direction: column;
 
