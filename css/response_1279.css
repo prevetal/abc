@@ -1038,10 +1038,9 @@
     }
 
 
-
-    .service_info .callback_form
+    .service_info .callback_form .form
     {
-        padding: 40px;
+        padding: 18px 30px 30px;
     }
 
 

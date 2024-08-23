@@ -173,4 +173,14 @@
 
         width: 240px;
     }
+
+
+
+    /*------------------
+        Service info
+    ------------------*/
+    .service_info .callback_form .form
+    {
+        padding: 18px 26px 26px;
+    }
 }

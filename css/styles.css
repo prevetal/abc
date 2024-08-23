@@ -5466,9 +5466,8 @@ header.fixed .menu_item > a
 
 .service_info .callback_form
 {
-    padding: 38px 33px 40px 40px;
-
-    background: #2a3c7b;
+    border: 2px solid #2a3c7b;
+    background: #f6f6f6;
 }
 
 
@@ -5477,9 +5476,12 @@ header.fixed .menu_item > a
     font-size: 24px;
     font-weight: 600;
 
+    padding: 18px;
+
     text-align: center;
 
     color: #fff;
+    background: #2a3c7b;
 }
 
 
@@ -5488,20 +5490,20 @@ header.fixed .menu_item > a
     font-size: 15px;
     line-height: 130%;
 
-    margin-top: 13px;
+    margin-bottom: 13px;
 
     text-align: center;
 
-    color: #fff;
+    color: #2a3c7b;
 }
 
 
 .service_info .callback_form .form
 {
-    margin-top: 12px;
+    padding: 18px 34px 34px;
 
-    --form_border_color: #fff;
-    --form_focus_color: #fff;
+    --form_border_color: #d3d3d3;
+    --form_focus_color: #d3d3d3;
     --form_bg_color: #fff;
     --form_placeholder_color: #2a3c7b;
 }
@@ -5518,7 +5520,9 @@ header.fixed .menu_item > a
     font-size: var(--font_size);
 
     height: 48px;
-    padding: 0 14px;
+    padding: 0 16px;
+
+    border: 1px solid var(--form_border_color);
 }
 
 
@@ -5534,7 +5538,7 @@ header.fixed .menu_item > a
     font-size: 10px;
     line-height: 123%;
 
-    color: #b6c2ed;
+    color: #1b1b1b;
 }
 
 
@@ -5552,8 +5556,9 @@ header.fixed .menu_item > a
 
 .service_info .callback_form .form .checkbox input:checked ~ .check
 {
-    border-color: #fff;
-    background: none;
+    color: #2a3c7b;
+    border-color: #2a3c7b;
+    background: #fff;
 }
 
 
@@ -5575,18 +5580,17 @@ header.fixed .menu_item > a
     height: 38px;
     padding: 2px 0 0;
 
-    transition: .2s linear;
+    transition: background .2s linear;
     text-transform: uppercase;
 
     color: #fff;
-    border: 2px solid #fff;
+    background: #2a3c7b;
 }
 
 
 .service_info .callback_form .form .submit_btn:hover
 {
-    color: #2a3c7b;
-    background: #fff;
+    background: #394e98;
 }
 
 
