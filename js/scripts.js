@@ -525,10 +525,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 	// Services aside
-	$('.service_info .services a.sub_link').click(function(e) {
+	$('.service_info .services .arr').click(function(e) {
 		e.preventDefault()
 
-		$(this).toggleClass('active').next().slideToggle(300)
+		$(this).closest('.main').toggleClass('active').next().slideToggle(300)
 	})
 })
 

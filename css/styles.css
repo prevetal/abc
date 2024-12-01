@@ -249,7 +249,7 @@ button
 }
 
 
-.main
+.wrap > .main
 {
     display: flex;
     flex: 1 0 auto;
@@ -1162,6 +1162,7 @@ header.fixed .menu_item > a
     width: 100%;
     padding: 16px 0;
 
+    border-bottom: 2px solid #2a3c7b;
     background: var(--bg);
 }
 
@@ -5370,7 +5371,96 @@ header.fixed .menu_item > a
 }
 
 
-.service_info .services .list > * a
+.service_info .services .list .main
+{
+    display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+
+.service_info .services .list .main .arr
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 37px;
+    min-height: 60px;
+
+    transition: .2s linear;
+
+    border-right: 1px solid #f0f0f0;
+}
+
+
+.service_info .services .list .main .arr svg
+{
+    display: block;
+
+    width: 7px;
+    height: 10px;
+
+    transition: transform .2s linear;
+}
+
+
+.service_info .services .list .main:hover .arr
+{
+    color: #fff;
+    border-color: #2a3c7b;
+    background: #2a3c7b;
+}
+
+
+.service_info .services .list .main .arr:hover
+{
+    color: #fff;
+    border-color: #7d90cf;
+    background: #7d90cf;
+}
+
+
+.service_info .services .list .main .arr:hover svg
+{
+    transform: rotate(90deg);
+}
+
+
+.service_info .services .list .main.active .arr
+{
+    color: #fff;
+    border-color: #fff;
+    background: #687ec5;
+}
+
+.service_info .services .list .main.active .arr:hover
+{
+    background: #2a3c7b;
+}
+
+
+.service_info .services .list .main.active svg
+{
+    transform: rotate(-90deg);
+}
+
+.service_info .services .list .main.active:hover .arr svg
+{
+    transform: rotate(0);
+}
+
+.service_info .services .list .main.active:hover .arr:hover svg
+{
+    transform: rotate(-90deg);
+}
+
+
+.service_info .services .list .main a
 {
     font-size: 15px;
     font-weight: 600;
@@ -5384,8 +5474,10 @@ header.fixed .menu_item > a
     flex-wrap: wrap;
     justify-content: space-between;
 
+    width: 100%;
     min-height: 60px;
-    padding: 12px 19px 7px 15px;
+    margin-left: auto;
+    padding: 7px 11px 7px 48px;
 
     transition: .2s linear;
     text-decoration: none;
@@ -5394,29 +5486,36 @@ header.fixed .menu_item > a
 }
 
 
-.service_info .services .list > * a .icon
+.service_info .services .list .main .arr + a
 {
-    display: block;
-
-    width: 7px;
-    height: 10px;
-
-    transform: translateY(-2px);
+    width: calc(100% - 37px);
+    padding-left: 11px;
 }
 
 
-.service_info .services .list > * a span
+.service_info .services .list .main:hover a
 {
-    width: calc(100% - 22px);
-    margin-left: auto;
+    color: #2a3c7b;
+    background: #f6f6f6;
 }
 
 
-.service_info .services .list > * a:hover,
-.service_info .services .list > * a.active
+.service_info .services .list .main a:hover
+{
+    color: #fff;
+    background: #687ec5;
+}
+
+
+.service_info .services .list .main.active a
 {
     color: #fff;
     background: #2a3c7b;
+}
+
+.service_info .services .list .main.active a:hover
+{
+    background: #687ec5;
 }
 
 
@@ -5430,14 +5529,27 @@ header.fixed .menu_item > a
 }
 
 
+.service_info .services .list .sub > * + *
+{
+    margin-top: 2px;
+}
+
+
 .service_info .services .list .sub a
 {
-    font-weight: 400;
+    font-size: 15px;
+    line-height: 130%;
+
+    position: relative;
 
     display: block;
 
-    min-height: 0;
-    padding: 6px 19px 4px 55px;
+    padding: 6px 19px 2px 56px;
+
+    transition: .2s linear;
+    text-decoration: none;
+
+    color: currentColor;
 }
 
 
@@ -5445,7 +5557,7 @@ header.fixed .menu_item > a
 {
     position: absolute;
     top: 14px;
-    left: 34px;
+    left: 36px;
 
     display: block;
 
@@ -5455,6 +5567,14 @@ header.fixed .menu_item > a
     content: '';
     transition: background .2s linear;
 
+    background: #2a3c7b;
+}
+
+
+.service_info .services .list .sub a:hover,
+.service_info .services .list .sub a.active
+{
+    color: #fff;
     background: #2a3c7b;
 }
 

@@ -1031,13 +1031,6 @@
     }
 
 
-
-    .service_info .services .list > * a
-    {
-        min-height: 48px;
-    }
-
-
     .service_info .callback_form .form
     {
         padding: 18px 30px 30px;

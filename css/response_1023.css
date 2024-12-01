@@ -228,6 +228,12 @@
     /*---------------
         Page head
     ---------------*/
+    .page_head
+    {
+        border: none;
+    }
+
+
     .page_desc
     {
         font-size: 16px;
