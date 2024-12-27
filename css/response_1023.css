@@ -408,6 +408,77 @@
 
 
 
+    /*----------------
+        In ratings
+    ----------------*/
+    .in_ratings .row
+    {
+        margin-left: -24px;
+    }
+
+
+    .in_ratings .row > *
+    {
+        width: calc(50% - 24px);
+        margin-left: 24px;
+    }
+
+
+    .in_ratings .item .logo
+    {
+        width: 104px;
+    }
+
+
+    .in_ratings .item .logo + *
+    {
+        width: calc(100% - 128px);
+    }
+
+    .in_ratings .item .logo + *.name
+    {
+        height: 83px;
+    }
+
+
+    .in_ratings .item .name
+    {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        height: 86px;
+        margin-bottom: 4px;
+    }
+
+
+    .in_ratings .item > .name + *
+    {
+        margin-top: 16px;
+
+        gap: 16px;
+    }
+
+
+    .in_ratings .item .exp,
+    .in_ratings .item .desc
+    {
+        width: calc(100% + 128px);
+        margin-left: -128px;
+    }
+
+
+    .in_ratings .item > .name + * .exp,
+    .in_ratings .item > .name + * .desc
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
     /*-----------
         Cases
     -----------*/

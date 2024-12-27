@@ -2700,6 +2700,113 @@ header.fixed .menu_item > a
 
 
 
+/*----------------
+    In ratings
+----------------*/
+.in_ratings .row
+{
+    margin-bottom: -64px;
+    margin-left: -64px;
+}
+
+
+.in_ratings .row > *
+{
+    width: calc(50% - 64px);
+    margin-bottom: 64px;
+    margin-left: 64px;
+}
+
+
+
+.in_ratings .item
+{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.in_ratings .item .logo
+{
+    width: 171px;
+    max-width: 100%;
+}
+
+
+.in_ratings .item .logo img
+{
+    display: block;
+
+    max-width: 100%;
+}
+
+
+.in_ratings .item .logo + *
+{
+    display: flex;
+    flex-direction: column;
+
+    width: calc(100% - 220px);
+
+    gap: 16px;
+}
+
+
+.in_ratings .item .logo + *.name
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    height: 136px;
+}
+
+
+.in_ratings .item .name
+{
+    font-size: 21px;
+    font-weight: 600;
+
+    margin-bottom: 1px;
+
+    color: #2a3c7b;
+}
+
+
+.in_ratings .item > .name + *
+{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 24px;
+
+    gap: 20px;
+}
+
+
+.in_ratings .item .exp
+{
+    font-weight: 600;
+    font-style: italic;
+    line-height: 162%;
+
+    color: #898989;
+}
+
+
+.in_ratings .item .desc
+{
+    line-height: 162%;
+}
+
+
+
 /*-----------
     Cases
 -----------*/

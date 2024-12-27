@@ -455,6 +455,57 @@
 
 
 
+    /*----------------
+        In ratings
+    ----------------*/
+    .in_ratings .row
+    {
+        margin-bottom: -40px;
+        margin-left: -40px;
+    }
+
+
+    .in_ratings .row > *
+    {
+        width: calc(50% - 40px);
+        margin-bottom: 40px;
+        margin-left: 40px;
+    }
+
+
+    .in_ratings .item .logo
+    {
+        width: 140px;
+    }
+
+
+    .in_ratings .item .logo + *
+    {
+        width: calc(100% - 164px);
+    }
+
+    .in_ratings .item .logo + *.name
+    {
+        height: 112px;
+    }
+
+
+    .in_ratings .item .name
+    {
+        font-size: 18px;
+
+        margin-bottom: 0;
+    }
+
+
+    .in_ratings .item .exp,
+    .in_ratings .item .desc
+    {
+        font-size: 14px;
+    }
+
+
+
     /*-----------
         Cases
     -----------*/

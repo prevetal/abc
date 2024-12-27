@@ -949,6 +949,40 @@
 
 
 
+    /*----------------
+        In ratings
+    ----------------*/
+    .in_ratings .row
+    {
+        margin-bottom: -24px;
+        margin-left: 0;
+    }
+
+
+    .in_ratings .row > *
+    {
+        width: 100%;
+        margin-bottom: 24px;
+        margin-left: 0;
+    }
+
+
+    .in_ratings .row > * + *
+    {
+        padding-top: 24px;
+
+        border-top: 1px solid #cdcdcd;
+    }
+
+
+    .in_ratings .item .exp,
+    .in_ratings .item .desc
+    {
+        line-height: 140%;
+    }
+
+
+
     /*-----------
         Cases
     -----------*/
