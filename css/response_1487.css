@@ -250,6 +250,16 @@
 
 
 
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .submit_btn.fill
+    {
+        padding: 15px 28px 11px;
+    }
+
+
+
     /*-----------------
         Main slider
     -----------------*/
@@ -845,6 +855,102 @@
         font-size: 24px;
 
         margin-bottom: 12px;
+    }
+
+
+
+    /*------------------
+        Action block
+    ------------------*/
+    .action_block .info
+    {
+        font-size: 16px;
+
+        width: calc(100% - 332px);
+        padding: 32px;
+    }
+
+
+    .action_block .title
+    {
+        font-size: 26px;
+    }
+
+
+    .action_block .phone a
+    {
+        font-size: 24px;
+    }
+
+
+    .action_block .btn
+    {
+        margin-top: 12px;
+        padding-top: 3px;
+    }
+
+
+
+    /*-----------------
+        Action form
+    -----------------*/
+    .content .action_form
+    {
+        margin-top: 60px;
+    }
+
+
+    .action_form
+    {
+        min-height: 512px;
+    }
+
+
+    .action_form .data
+    {
+        width: calc(100% - 332px);
+        padding: 32px 0 32px 32px;
+    }
+
+
+    .action_form .title
+    {
+        font-size: 26px;
+    }
+
+
+    .action_form .desc
+    {
+        font-size: 16px;
+
+        margin-top: 12px;
+    }
+
+
+    .action_form .form .columns
+    {
+        --form_columns_offset: 20px;
+    }
+
+
+    .action_form .person
+    {
+        top: -13px;
+
+        width: 308px;
+    }
+
+
+    .action_form .person .name
+    {
+        margin-top: 20px;
+    }
+
+
+    .action_form .person .name,
+    .action_form .person .post
+    {
+        padding-right: 24px;
     }
 
 

@@ -1615,6 +1615,7 @@ header.fixed .menu_item > a
 
     width: 100%;
     height: 90px;
+    min-height: 90px;
     padding: 10px 0;
 
     resize: none;
@@ -1825,6 +1826,42 @@ header.fixed .menu_item > a
 
 
 
+.form .field > .icon
+{
+    position: absolute;
+    z-index: 3;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 41px;
+    height: 30px;
+
+    pointer-events: none;
+
+    color: #898989;
+}
+
+
+.form .field > .icon svg
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.form .field > .icon + .input
+{
+    padding-left: 40px;
+}
+
+
+
 .form .file label
 {
     font-size: 14px;
@@ -1982,6 +2019,35 @@ header.fixed .menu_item > a
 }
 
 
+.form .agree_text
+{
+    font-size: 12px;
+    line-height: 145.476%;
+
+    width: 495px;
+    max-width: 100%;
+    margin-top: 20px;
+
+    color: #898989;
+}
+
+
+.form .agree_text a
+{
+    transition: color .2s linear;
+
+    color: #2a3b7b;
+
+    text-decoration-thickness: 1px;
+}
+
+
+.form .agree_text a:hover
+{
+    color: #898989;
+}
+
+
 .form .submit_btn
 {
     font-size: 14px;
@@ -2004,6 +2070,30 @@ header.fixed .menu_item > a
 {
     color: #fff;
     background: #2a3c7b;
+}
+
+
+.form .submit_btn.fill
+{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 162%;
+
+    margin: 0;
+    padding: 17px 28px 11px;
+
+    text-transform: uppercase;
+
+    color: #fff;
+    border-color: #2a3c7b;
+    background: #2a3c7b;
+}
+
+
+.form .submit_btn.fill:hover
+{
+    border-color: #394e98;
+    background: #394e98;
 }
 
 
@@ -6063,6 +6153,303 @@ header.fixed .menu_item > a
 {
     content: counter(number) '.';
     counter-increment: number;
+}
+
+
+
+/*------------------
+    Action block
+------------------*/
+.content .action_block
+{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+.action_block
+{
+    padding: 7px;
+
+    border: 1px solid #2a3b7b;
+    background: #fff;
+}
+
+
+.action_block .data
+{
+    position: relative;
+
+    background: #f6f6f6;
+}
+
+
+.action_block .info
+{
+    font-size: 18px;
+    line-height: 145.45%;
+
+    position: relative;
+    z-index: 3;
+
+    width: 666px;
+    max-width: 100%;
+    padding: 42px;
+
+    color: #2a3c7b;
+}
+
+
+.action_block .title
+{
+    font-size: 27px;
+}
+
+
+.action_block .desc
+{
+    margin-top: 24px;
+}
+
+
+.action_block .phone
+{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 20px;
+
+    gap: 8px;
+}
+
+
+.action_block .phone a
+{
+    font-size: 26px;
+    font-weight: 600;
+    font-style: italic;
+
+    white-space: nowrap;
+    text-decoration: none;
+
+    color: currentColor;
+}
+
+
+.action_block .or
+{
+    margin-top: 24px;
+}
+
+
+.action_block .btn
+{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 162%;
+
+    height: 38px;
+    margin-top: 14px;
+    padding: 4px 28px 0;
+
+    transition: background .2s linear;
+    text-transform: uppercase;
+
+    color: #fff;
+    background: #2a3c7b;
+}
+
+
+.action_block .btn:hover
+{
+    background: #687ec5;
+}
+
+
+.action_block .img
+{
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+
+    display: block;
+
+    height: 100%;
+
+    pointer-events: none;
+}
+
+
+.action_block .img img
+{
+    display: block;
+
+    height: 100%;
+}
+
+
+
+/*-----------------
+    Action form
+-----------------*/
+.content .action_form
+{
+    margin-top: 64px;
+}
+
+
+.action_form
+{
+    position: relative;
+
+    min-height: 532px;
+
+    border: 8px solid #f2f2f2;
+    background: #f6f6f6;
+}
+
+
+.action_form .data
+{
+    width: 606px;
+    max-width: 100%;
+    padding: 42px 0 34px 42px;
+}
+
+
+.action_form .title
+{
+    font-size: 27px;
+
+    color: #2a3c7b;
+}
+
+
+.action_form .desc
+{
+    font-size: 18px;
+    line-height: 145.45%;
+
+    margin-top: 15px;
+
+    color: #2a3c7b;
+}
+
+
+.action_form .form
+{
+    margin-top: 19px;
+
+    --form_border_color: #d3d3d3;
+    --form_focus_color: #d3d3d3;
+    --form_bg_color: #fff;
+    --form_placeholder_color: #898989;
+}
+
+
+.action_form .form .line
+{
+    margin-bottom: 15px;
+}
+
+
+.action_form .form .field > .icon
+{
+    height: 48px;
+}
+
+
+.action_form .form .input
+{
+    font-size: var(--font_size);
+
+    height: 48px;
+    padding: 2px 12px 0;
+
+    border: 1px solid var(--form_border_color);
+
+    --form_placeholder_color: #1b1b1b;
+}
+
+
+.action_form .form textarea
+{
+    font-size: var(--font_size);
+    line-height: 162%;
+
+    height: 74px;
+    min-height: 74px;
+    padding: 10px 12px;
+
+    border: 1px solid var(--form_border_color);
+}
+
+
+.action_form .form .file
+{
+    margin-top: 0;
+}
+
+
+.action_form .form .submit
+{
+    padding-top: 10px;
+}
+
+
+.action_form .person
+{
+    position: absolute;
+    top: -17px;
+    right: 0;
+
+    display: flex;
+    align-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    width: 384px;
+    max-width: 100%;
+
+    color: #2a3c7b;
+}
+
+
+.action_form .person picture,
+.action_form .person img
+{
+    display: block;
+
+    width: 100%;
+}
+
+
+.action_form .person .name
+{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 162%;
+
+    width: 100%;
+    margin-top: 22px;
+    padding-right: 42px;
+
+    text-align: right;
+}
+
+
+.action_form .person .post
+{
+    font-size: 14px;
+    font-style: italic;
+    line-height: 162%;
+
+    width: 100%;
+    padding-right: 42px;
+
+    text-align: right;
 }
 
 

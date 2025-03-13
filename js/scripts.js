@@ -605,6 +605,14 @@ window.addEventListener('resize', function () {
 
 
 
+// Auto grow
+function autoGrow(element) {
+	element.style.height = '5px'
+	element.style.height = (element.scrollHeight + 2) + 'px'
+}
+
+
+
 // Map
 function initMap() {
 	ymaps.ready(() => {

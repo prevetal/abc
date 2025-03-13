@@ -34,6 +34,14 @@
     <rect x="4" y="9" width="9" height="1" fill="currentColor"></rect>
     <rect x="4" y="12" width="9" height="1" fill="currentColor"></rect>
   </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 20" id="ic_input_phone">
+    <rect x="1" y="1" width="12" height="18" rx="3" stroke="currentColor" stroke-width="2"></rect>
+    <rect x="5" y="15" width="4" height="2" rx="1" fill="currentColor"></rect>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 21" id="ic_input_user">
+    <path d="M17 17C17 18.1338 16.766 18.6522 16.5441 18.9027C16.3347 19.1392 15.9805 19.3121 15.2852 19.3671C14.5771 19.423 13.7019 19.3445 12.6022 19.2351C12.555 19.2305 12.5076 19.2257 12.4598 19.221C11.4263 19.1179 10.2436 19 9 19C7.7564 19 6.57372 19.1179 5.54022 19.221C5.49244 19.2257 5.44498 19.2305 5.39784 19.2351C4.2981 19.3445 3.42288 19.423 2.7148 19.3671C2.01945 19.3121 1.66529 19.1392 1.45589 18.9027C1.23404 18.6522 1 18.1338 1 17C1 12.5817 4.58172 9 9 9C13.4183 9 17 12.5817 17 17Z" stroke="currentColor" stroke-width="2"></path>
+    <circle cx="9" cy="5" r="4" stroke="currentColor" stroke-width="2"></circle>
+  </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 26.1 16.31" id="ic_link">
     <path d="M16.79,2l7.65,5.78-7.65,5.78V10.39H8a10.57,10.57,0,0,0-5.56,1.46,11.55,11.55,0,0,1,8.09-6.47,39.38,39.38,0,0,1,4-.18h2.27V2m-1-2V4.21H14.52s-3.07,0-4.2.19c-5,.8-8.91,5.43-10,10.46-.13.54-.21,1.06-.25,1.3.22-1,2.23-4.76,7.93-4.76h.11l7.73,0v4.19L26.1,7.79ZM0,16.16a1.37,1.37,0,0,0,0,.16s0-.06,0-.16" fill="currentColor"></path>
   </symbol>

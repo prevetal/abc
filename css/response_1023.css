@@ -1077,6 +1077,92 @@
 
 
 
+    /*------------------
+        Action block
+    ------------------*/
+    .action_block .info
+    {
+        font-size: 14px;
+
+        width: 448px;
+        padding: 24px;
+    }
+
+
+    .action_block .title
+    {
+        font-size: 22px;
+    }
+
+
+    .action_block .phone a
+    {
+        font-size: 22px;
+    }
+
+
+
+    /*-----------------
+        Action form
+    -----------------*/
+    .action_form
+    {
+        min-height: 512px;
+    }
+
+
+    .action_form .data
+    {
+        width: calc(100% - 280px);
+        padding: 24px 0 24px 24px;
+    }
+
+
+    .action_form .title
+    {
+        font-size: 24px;
+    }
+
+
+    .action_form .desc
+    {
+        font-size: 14px;
+    }
+
+
+    .action_form .person
+    {
+        top: -11px;
+
+        width: 248px;
+    }
+
+
+    .action_form .person .name,
+    .action_form .person .post
+    {
+        padding-right: 20px;
+    }
+
+
+    .action_form .person .name
+    {
+        font-size: 15px;
+        line-height: 120%;
+
+        margin-top: 16px;
+    }
+
+
+    .action_form .person .post
+    {
+        font-size: 13px;
+
+        margin-top: 4px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

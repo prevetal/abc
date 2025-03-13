@@ -163,6 +163,13 @@
     }
 
 
+    .form .submit_btn.fill
+    {
+        width: 100%;
+        padding: 14px 23px 10px;
+    }
+
+
 
     /*----------------
         Typography
@@ -1172,6 +1179,80 @@
     .service_advantages .row > *
     {
         width: calc(50% - 24px);
+    }
+
+
+
+    /*------------------
+        Action block
+    ------------------*/
+    .action_block .info
+    {
+        width: 100%;
+    }
+
+
+    .action_block .img
+    {
+        position: relative;
+
+        width: 75%;
+        max-width: 100%;
+        height: auto;
+        margin-left: auto;
+    }
+
+
+    .action_block .img img
+    {
+        width: 100%;
+        height: auto;
+    }
+
+
+
+    /*-----------------
+        Action form
+    -----------------*/
+    .action_form
+    {
+        min-height: 0;
+    }
+
+
+    .action_form .data
+    {
+        width: 100%;
+        padding: 24px;
+    }
+
+
+    .action_form .person
+    {
+        position: relative;
+        top: 0;
+
+        width: 75%;
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-bottom: 16px;
+    }
+
+
+    .action_form .person .name,
+    .action_form .person .post
+    {
+        padding-right: 0;
+        padding-left: 24px;
+
+        text-align: left;
+    }
+
+
+    .action_form .person .name
+    {
+        font-size: 16px;
     }
 
 

@@ -40,6 +40,20 @@
     }
 
 
+    .form .submit_btn.fill
+    {
+        padding: 14px 11px 10px;
+    }
+
+
+    .form .agree_text
+    {
+        font-size: 11px;
+
+        width: 100%;
+    }
+
+
 
     /*--------------
         Services
@@ -182,5 +196,60 @@
     .service_info .callback_form .form
     {
         padding: 18px 26px 26px;
+    }
+
+
+
+    /*------------------
+        Action block
+    ------------------*/
+    .action_block .info
+    {
+        padding: 20px 20px 24px;
+    }
+
+
+    .action_block .title
+    {
+        line-height: 130%;
+    }
+
+
+    .action_block .desc,
+    .action_block .or
+    {
+        margin-top: 20px;
+    }
+
+
+    .action_block .phone a
+    {
+        font-size: 20px;
+    }
+
+
+    .action_block .img
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+    /*-----------------
+        Action form
+    -----------------*/
+    .action_form .data
+    {
+        padding: 16px;
+    }
+
+
+    .action_form .person
+    {
+        width: 100%;
+        margin-top: 12px;
+        margin-right: 0;
+        margin-left: 0;
     }
 }
