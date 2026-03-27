@@ -116,10 +116,10 @@
 
     header .menu_item > a
     {
+        height: 60px;
+
         font-size: 22px;
         line-height: 30px;
-
-        height: 60px;
     }
 
 
@@ -225,11 +225,11 @@
     .text_block blockquote,
     .text_block q
     {
-        font-size: 18px;
-        line-height: 26px;
-
         margin: 50px 0 50px 60px;
         padding-left: 40px;
+
+        font-size: 18px;
+        line-height: 26px;
     }
 
 
@@ -279,10 +279,10 @@
 
     .main_slider .desc
     {
-        line-height: 25px;
-
         width: 355px;
         margin-top: 20px;
+
+        line-height: 25px;
     }
 
 
@@ -458,10 +458,10 @@
 
     .persons .person .contacts
     {
-        line-height: 25px;
-
         margin-top: 30px;
         padding-top: 30px;
+
+        line-height: 25px;
     }
 
 
@@ -516,10 +516,10 @@
 
     .person_info .contacts
     {
-        line-height: 25px;
-
         margin-top: 30px;
         padding-top: 30px;
+
+        line-height: 25px;
     }
 
     .person_info .contacts:before
@@ -586,10 +586,10 @@
 
     .specialists .person .contacts
     {
-        line-height: 25px;
-
         margin-top: 30px;
         padding-top: 30px;
+
+        line-height: 25px;
     }
 
 
@@ -613,18 +613,18 @@
 
     .branches .tabs .name
     {
+        margin-bottom: 16px;
+
         font-size: 17px;
         line-height: 20px;
-
-        margin-bottom: 16px;
     }
 
 
     .branches .tabs .contacts
     {
-        line-height: 25px;
-
         padding: 20px;
+
+        line-height: 25px;
     }
 
 
@@ -720,9 +720,9 @@
 
     .service_info .services .title
     {
-        font-size: 22px;
-
         margin-bottom: 12px;
+
+        font-size: 22px;
     }
 
 
@@ -735,9 +735,9 @@
 
     .service_info .callback_form .desc
     {
-        font-size: 14px;
-
         margin-bottom: 12px;
+
+        font-size: 14px;
     }
 
 
@@ -760,17 +760,17 @@
     ----------------------*/
     .content_contacts .label
     {
-        font-size: 15px;
-
         margin-left: 40px;
+
+        font-size: 15px;
     }
 
 
     .content_contacts .phone
     {
-        font-size: 24px;
-
         margin-left: 40px;
+
+        font-size: 24px;
     }
 
 
@@ -795,25 +795,25 @@
 
     .service_steps .block_title
     {
-        font-size: 28px;
-
         margin-bottom: 12px;
+
+        font-size: 28px;
     }
 
 
     .service_steps .block_desc
     {
-        font-size: 18px;
-
         margin-bottom: 24px;
+
+        font-size: 18px;
     }
 
 
     .service_steps .item .number
     {
-        font-size: 24px;
-
         margin-bottom: 12px;
+
+        font-size: 24px;
     }
 
 
@@ -829,9 +829,9 @@
 
     .service_advantages .block_title
     {
-        font-size: 28px;
-
         margin-bottom: 24px;
+
+        font-size: 28px;
     }
 
 
@@ -852,9 +852,9 @@
 
     .service_advantages .item .number
     {
-        font-size: 24px;
-
         margin-bottom: 12px;
+
+        font-size: 24px;
     }
 
 
@@ -864,10 +864,10 @@
     ------------------*/
     .action_block .info
     {
-        font-size: 16px;
-
         width: calc(100% - 332px);
         padding: 32px;
+
+        font-size: 16px;
     }
 
 
@@ -921,9 +921,9 @@
 
     .action_form .desc
     {
-        font-size: 16px;
-
         margin-top: 12px;
+
+        font-size: 16px;
     }
 
 

@@ -605,10 +605,10 @@
     -----------------*/
     .get_consult .block_title
     {
+        margin-bottom: 32px;
+
         font-size: 26px;
         line-height: 32px;
-
-        margin-bottom: 32px;
     }
 
 
@@ -736,9 +736,9 @@
 
     .advantages .item
     {
-        line-height: 21px;
-
         padding: 0 24px;
+
+        line-height: 21px;
     }
 
 
@@ -949,9 +949,9 @@
 
     .branches .tabs .name
     {
-        font-size: 16px;
-
         margin-bottom: 12px;
+
+        font-size: 16px;
     }
 
 
@@ -1058,10 +1058,10 @@
 
     .free_consult .features .item
     {
-        line-height: 140%;
-
         width: calc(50% - 12px);
         margin-bottom: 24px;
+
+        line-height: 140%;
     }
 
 
@@ -1291,9 +1291,9 @@
 
     .modal_title
     {
+        margin-bottom: 30px;
+
         font-size: 26px;
         line-height: 34px;
-
-        margin-bottom: 30px;
     }
 }

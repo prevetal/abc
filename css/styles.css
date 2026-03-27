@@ -199,12 +199,12 @@ html.custom_scroll
 
 body
 {
-    font: var(--font_size) var(--font_family);
-
     height: 100%;
     min-height: -moz-available;
     min-height: -webkit-fill-available;
     min-height:         fill-available;
+
+    font: var(--font_size) var(--font_family);
 
     color: var(--text_color);
 }
@@ -217,12 +217,12 @@ body.menu_open
 
 button
 {
+    display: inline-block;
+
     font-family: inherit;
     font-size: inherit;
     font-weight: inherit;
     line-height: inherit;
-
-    display: inline-block;
 
     cursor: pointer;
     vertical-align: top;
@@ -236,7 +236,6 @@ button
 .wrap
 {
     position: relative;
-    z-index: 9;
 
     display: flex;
     overflow: clip;
@@ -244,6 +243,8 @@ button
 
     min-width: 375px;
     min-height: 100%;
+
+    z-index: 9;
 
     background: var(--bg);
 }
@@ -299,7 +300,6 @@ button
 .overlay
 {
     position: fixed;
-    z-index: 100;
     top: 0;
     left: 0;
 
@@ -307,6 +307,8 @@ button
 
     width: 100%;
     height: 100%;
+
+    z-index: 100;
 
     opacity: .65;
     background: #000;
@@ -464,12 +466,12 @@ button
 .pagination a,
 .pagination .sep
 {
-    line-height: 38px;
-
     display: inline-block;
 
     width: 40px;
     height: 40px;
+
+    line-height: 38px;
 
     transition: .2s linear;
     text-align: center;
@@ -546,12 +548,13 @@ button
 header
 {
     position: relative;
-    z-index: 9;
     top: 0;
     left: 0;
 
     width: 100%;
     padding: 34px 0 40px;
+
+    z-index: 9;
 
     background: var(--bg);
 }
@@ -644,10 +647,10 @@ header .location
 
 header .map_link
 {
+    margin-left: 28px;
+
     font-size: 14px;
     line-height: 22px;
-
-    margin-left: 28px;
 }
 
 
@@ -704,9 +707,6 @@ header .phone a
 
 header .callback_btn
 {
-    font-size: 14px;
-    line-height: 22px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -714,6 +714,9 @@ header .callback_btn
     justify-content: flex-start;
 
     margin-left: 28px;
+
+    font-size: 14px;
+    line-height: 22px;
 
     transition: color .2s linear;
     text-decoration: underline;
@@ -848,9 +851,6 @@ header .menu_item + .menu_item
 
 header .menu_item > a
 {
-    font-size: 24px;
-    line-height: 32px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -858,6 +858,9 @@ header .menu_item > a
     justify-content: center;
 
     height: 68px;
+
+    font-size: 24px;
+    line-height: 32px;
 
     transition: color .2s linear;
     text-decoration: none;
@@ -876,7 +879,6 @@ header .menu_item > a.active
 header .menu .sub_menu
 {
     position: absolute;
-    z-index: 9;
     top: 100%;
     left: 0;
 
@@ -885,6 +887,7 @@ header .menu .sub_menu
     width: 100%;
     padding: 50px 0;
 
+    z-index: 9;
     transition: .2s linear;
     pointer-events: none;
 
@@ -959,15 +962,15 @@ header .menu .sub_menu .col > * + *
 
 header .menu .sub_menu a
 {
-    font-size: 14px;
-    font-style: italic;
-    line-height: 18px;
-
     display: flex;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    font-size: 14px;
+    font-style: italic;
+    line-height: 18px;
 
     transition: .2s linear;
     text-decoration: none;
@@ -1153,7 +1156,6 @@ header.fixed .menu_item > a
 .mob_header
 {
     position: sticky;
-    z-index: 9;
     top: 0;
     left: 0;
 
@@ -1161,6 +1163,8 @@ header.fixed .menu_item > a
 
     width: 100%;
     padding: 16px 0;
+
+    z-index: 9;
 
     border-bottom: 2px solid #2a3c7b;
     background: var(--bg);
@@ -1228,9 +1232,6 @@ header.fixed .menu_item > a
 
 .mob_header .callback_btn
 {
-    font-size: 14px;
-    line-height: 22px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -1238,6 +1239,9 @@ header.fixed .menu_item > a
     justify-content: flex-start;
 
     margin-left: 24px;
+
+    font-size: 14px;
+    line-height: 22px;
 
     transition: color .2s linear;
     text-decoration: underline;
@@ -1435,23 +1439,23 @@ header.fixed .menu_item > a
 
 .page_title
 {
-    font-size: var(--font_size_title);
-    font-weight: 400;
-    line-height: calc(100% + 10px);
-
     display: block;
 
     margin-top: 30px;
+
+    font-size: var(--font_size_title);
+    font-weight: 400;
+    line-height: calc(100% + 10px);
 }
 
 
 .page_desc
 {
+    margin-top: 10px;
+
     font-size: 24px;
     font-style: italic;
     line-height: 34px;
-
-    margin-top: 10px;
 
     color: #898989;
 }
@@ -1476,21 +1480,21 @@ header.fixed .menu_item > a
 
 .block_head .title
 {
+    display: block;
+
     font-size: var(--font_size_title);
     font-weight: 400;
     line-height: calc(100% + 10px);
-
-    display: block;
 }
 
 
 .block_head .desc
 {
+    margin-top: 10px;
+
     font-size: 24px;
     font-style: italic;
     line-height: 34px;
-
-    margin-top: 10px;
 
     color: #898989;
 }
@@ -1582,14 +1586,14 @@ header.fixed .menu_item > a
 
 .form .input
 {
-    font-family: var(--font_family);
-    font-size: 14px;
-
     display: block;
 
     width: 100%;
     height: 30px;
     padding: 0;
+
+    font-family: var(--font_family);
+    font-size: 14px;
 
     transition: border-color .2s linear;
 
@@ -1608,15 +1612,15 @@ header.fixed .menu_item > a
 
 .form textarea
 {
-    font-family: var(--font_family);
-    font-size: 14px;
-
     display: block;
 
     width: 100%;
     height: 90px;
     min-height: 90px;
     padding: 10px 0;
+
+    font-family: var(--font_family);
+    font-size: 14px;
 
     resize: none;
     transition: border-color .2s linear;
@@ -1671,10 +1675,10 @@ header.fixed .menu_item > a
 
 .form .error_text
 {
+    margin-top: 8px;
+
     font-size: 13px;
     line-height: 20px;
-
-    margin-top: 8px;
 
     color: var(--form_error_color);
 }
@@ -1703,14 +1707,14 @@ header.fixed .menu_item > a
 
 .form .nice-select .current
 {
-    font-size: 14px;
-    line-height: 29px;
-
     display: block;
     overflow: hidden;
 
     height: 30px;
     padding: 0 30px 0 0;
+
+    font-size: 14px;
+    line-height: 29px;
 
     cursor: pointer;
     transition: border-color .2s linear;
@@ -1732,7 +1736,6 @@ header.fixed .menu_item > a
 .form .nice-select-dropdown
 {
     position: absolute;
-    z-index: 9;
     top: 100%;
     left: 0;
 
@@ -1742,6 +1745,7 @@ header.fixed .menu_item > a
     width: 100%;
     margin-top: -1px;
 
+    z-index: 9;
     transition: .2s linear;
     transform: none;
 
@@ -1769,14 +1773,14 @@ header.fixed .menu_item > a
 
 .form .nice-select .list .option
 {
-    font-size: 14px;
-    line-height: 18px;
-
     display: block;
 
     padding: 11px 25px;
 
     list-style-type: none;
+
+    font-size: 14px;
+    line-height: 18px;
 
     cursor: pointer;
     transition: background .2s linear;
@@ -1829,7 +1833,6 @@ header.fixed .menu_item > a
 .form .field > .icon
 {
     position: absolute;
-    z-index: 3;
 
     display: flex;
     align-content: center;
@@ -1840,6 +1843,7 @@ header.fixed .menu_item > a
     width: 41px;
     height: 30px;
 
+    z-index: 3;
     pointer-events: none;
 
     color: #898989;
@@ -1864,14 +1868,14 @@ header.fixed .menu_item > a
 
 .form .file label
 {
-    font-size: 14px;
-    line-height: 22px;
-
     display: flex;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    font-size: 14px;
+    line-height: 22px;
 
     cursor: pointer;
     transition: .2s linear;
@@ -1915,9 +1919,6 @@ header.fixed .menu_item > a
 
 .form .checkbox
 {
-    font-size: 12px;
-    line-height: 20px;
-
     position: relative;
 
     display: flex;
@@ -1928,6 +1929,9 @@ header.fixed .menu_item > a
 
     min-height: 20px;
     padding-left: 28px;
+
+    font-size: 12px;
+    line-height: 20px;
 
     cursor: pointer;
 
@@ -2021,12 +2025,12 @@ header.fixed .menu_item > a
 
 .form .agree_text
 {
-    font-size: 12px;
-    line-height: 145.476%;
-
     width: 495px;
     max-width: 100%;
     margin-top: 20px;
+
+    font-size: 12px;
+    line-height: 145.476%;
 
     color: #898989;
 }
@@ -2050,14 +2054,14 @@ header.fixed .menu_item > a
 
 .form .submit_btn
 {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 22px;
-
     display: block;
 
     margin: 0 auto;
     padding: 12px 18px;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
 
     transition: .2s linear;
 
@@ -2075,12 +2079,12 @@ header.fixed .menu_item > a
 
 .form .submit_btn.fill
 {
+    margin: 0;
+    padding: 17px 28px 11px;
+
     font-size: 12px;
     font-weight: 600;
     line-height: 162%;
-
-    margin: 0;
-    padding: 17px 28px 11px;
 
     text-transform: uppercase;
 
@@ -2133,22 +2137,22 @@ header.fixed .menu_item > a
 
 .text_block h2
 {
+    margin-bottom: 30px !important;
+
     font-size: 30px;
     font-weight: 400;
     line-height: 40px;
-
-    margin-bottom: 30px !important;
 
     text-align: center;
 }
 
 .text_block h3
 {
+    margin-bottom: 30px !important;
+
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
-
-    margin-bottom: 30px !important;
 
     text-align: center;
 }
@@ -2220,14 +2224,14 @@ header.fixed .menu_item > a
 .text_block blockquote,
 .text_block q
 {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 30px;
-
     display: block;
 
     margin: 60px 0 60px 77px;
     padding-left: 50px;
+
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
 
     border-left: 3px solid #2a3c7b;
 }
@@ -2244,11 +2248,11 @@ header.fixed .menu_item > a
 
 .text_block table th
 {
+    padding-bottom: 15px;
+
     font-size: 14px;
     font-weight: 700;
     line-height: 22px;
-
-    padding-bottom: 15px;
 
     text-align: left;
     vertical-align: top;
@@ -2378,11 +2382,11 @@ header.fixed .menu_item > a
 
 .text_block ol li:before
 {
-    font-weight: 700;
-
     position: absolute;
     top: 0;
     left: 0;
+
+    font-weight: 700;
 
     content: counter(li) '.';
     counter-increment: li;
@@ -2442,7 +2446,6 @@ header.fixed .menu_item > a
 .text_block .image_block .image:before
 {
     position: absolute;
-    z-index: 1;
     bottom: 0;
     left: 130px;
 
@@ -2452,6 +2455,7 @@ header.fixed .menu_item > a
     height: calc(100% - 50px);
 
     content: '';
+    z-index: 1;
 
     background: #f6f6f6;
 }
@@ -2477,6 +2481,7 @@ header.fixed .menu_item > a
 .text_block .image_block .image img
 {
     position: relative;
+
     z-index: 3;
 }
 
@@ -2484,9 +2489,10 @@ header.fixed .menu_item > a
 .text_block .image_block > div
 {
     position: relative;
-    z-index: 3;
 
     width: calc(50% - 30px);
+
+    z-index: 3;
 }
 
 
@@ -2533,7 +2539,6 @@ header.fixed .menu_item > a
 .main_slider .img
 {
     position: absolute;
-    z-index: 1;
     top: 0;
     left: 0;
 
@@ -2541,6 +2546,8 @@ header.fixed .menu_item > a
 
     width: 50%;
     height: 100%;
+
+    z-index: 1;
 
     filter: grayscale(100%);
     object-fit: cover;
@@ -2550,7 +2557,6 @@ header.fixed .menu_item > a
 .main_slider .cont
 {
     position: relative;
-    z-index: 3;
 
     display: flex;
     align-content: center;
@@ -2561,6 +2567,8 @@ header.fixed .menu_item > a
     min-height: 570px;
     padding-top: 60px;
     padding-bottom: 107px;
+
+    z-index: 3;
 }
 
 
@@ -2580,22 +2588,22 @@ header.fixed .menu_item > a
 
 .main_slider .desc
 {
-    line-height: 26px;
-
     width: 375px;
     max-width: 100%;
     margin-top: 24px;
+
+    line-height: 26px;
 }
 
 
 .main_slider .btn
 {
+    margin-top: 50px;
+    padding: 12px 18px;
+
     font-size: 14px;
     font-weight: 700;
     line-height: 22px;
-
-    margin-top: 50px;
-    padding: 12px 18px;
 
     transition: .2s linear;
 
@@ -2633,13 +2641,13 @@ header.fixed .menu_item > a
 
 .services .service
 {
-    font-style: italic;
-    line-height: 24px;
-
     display: flex;
     flex-direction: column;
 
     padding: 31px 24px 23px;
+
+    font-style: italic;
+    line-height: 24px;
 
     transition: .2s linear;
     text-decoration: none;
@@ -2860,10 +2868,10 @@ header.fixed .menu_item > a
 
 .in_ratings .item .name
 {
+    margin-bottom: 1px;
+
     font-size: 21px;
     font-weight: 600;
-
-    margin-bottom: 1px;
 
     color: #2a3c7b;
 }
@@ -3010,11 +3018,11 @@ header.fixed .menu_item > a
 
 .cases .item .name
 {
+    padding: 0 20px;
+
     font-size: 20px;
     font-weight: 700;
     line-height: 40px;
-
-    padding: 0 20px;
 
     letter-spacing: .01em;
     text-transform: uppercase;
@@ -3023,10 +3031,10 @@ header.fixed .menu_item > a
 
 .cases .item .desc
 {
+    padding: 0 20px;
+
     font-size: 14px;
     line-height: 22px;
-
-    padding: 0 20px;
 }
 
 
@@ -3039,13 +3047,13 @@ header.fixed .menu_item > a
 
 .cases .item .link a
 {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 22px;
-
     display: inline-block;
 
     padding: 12px 18px;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
 
     transition: .2s linear;
     vertical-align: top;
@@ -3105,9 +3113,6 @@ header.fixed .menu_item > a
 
 .cases .item .arr span
 {
-    font-size: 14px;
-    line-height: 22px;
-
     position: absolute;
     top: 100%;
     left: 0;
@@ -3117,6 +3122,9 @@ header.fixed .menu_item > a
 
     width: 100%;
     padding: 12px;
+
+    font-size: 14px;
+    line-height: 22px;
 
     transition: .2s linear;
     text-align: center;
@@ -3151,18 +3159,18 @@ header.fixed .menu_item > a
 .media .data
 {
     position: relative;
-    z-index: 3;
 
     width: calc(100% - 659px);
     padding-top: 105px;
     padding-left: 170px;
+
+    z-index: 3;
 }
 
 
 .media .data .logo
 {
     position: absolute;
-    z-index: 1;
     top: 0;
     left: 0;
 
@@ -3171,6 +3179,7 @@ header.fixed .menu_item > a
     width: 240px;
     height: 293px;
 
+    z-index: 1;
     pointer-events: none;
 }
 
@@ -3178,6 +3187,7 @@ header.fixed .menu_item > a
 .media .data .text_block
 {
     position: relative;
+
     z-index: 3;
 }
 
@@ -3202,7 +3212,6 @@ header.fixed .menu_item > a
 .media .video:before
 {
     position: absolute;
-    z-index: 1;
     right: 0;
     bottom: 0;
 
@@ -3212,6 +3221,7 @@ header.fixed .menu_item > a
     height: calc(100% - 50px);
 
     content: '';
+    z-index: 1;
 
     background: #f6f6f6;
 }
@@ -3220,11 +3230,12 @@ header.fixed .menu_item > a
 .media .video .thumb
 {
     position: relative;
-    z-index: 2;
 
     overflow: hidden;
 
     padding-bottom: 63.875%;
+
+    z-index: 2;
 
     background: #ddd;
 }
@@ -3233,7 +3244,6 @@ header.fixed .menu_item > a
 .media .video .thumb img
 {
     position: absolute;
-    z-index: 1;
     top: 0;
     left: 0;
 
@@ -3242,6 +3252,8 @@ header.fixed .menu_item > a
     width: 100%;
     height: 100%;
 
+    z-index: 1;
+
     filter: grayscale(100%);
     object-fit: cover;
 }
@@ -3249,11 +3261,7 @@ header.fixed .menu_item > a
 
 .media .video .btn
 {
-    font-size: 14px;
-    line-height: 22px;
-
     position: absolute;
-    z-index: 3;
     bottom: 55px;
     left: 0;
 
@@ -3261,6 +3269,10 @@ header.fixed .menu_item > a
     max-width: 100%;
     padding: 24px 20px 16px;
 
+    font-size: 14px;
+    line-height: 22px;
+
+    z-index: 3;
     transition: .2s linear;
     text-align: center;
 
@@ -3355,12 +3367,12 @@ header.fixed .menu_item > a
 
 .stats .item .val
 {
+    height: 50px;
+    margin-bottom: 20px;
+
     font-size: 60px;
     font-weight: 700;
     line-height: 50px;
-
-    height: 50px;
-    margin-bottom: 20px;
 
     white-space: nowrap;
 
@@ -3369,9 +3381,9 @@ header.fixed .menu_item > a
 
 .stats .item .val small
 {
-    font-size: 30px;
-
     margin-left: 10px;
+
+    font-size: 30px;
 }
 
 
@@ -3434,24 +3446,24 @@ header.fixed .menu_item > a
 
 .steps .step
 {
+    padding-right: 45px;
+
     font-size: 14px;
     line-height: 22px;
-
-    padding-right: 45px;
 }
 
 
 .steps .step .number
 {
-    font-size: 30px;
-    font-style: italic;
-    line-height: 26px;
-
     position: relative;
 
     display: inline-block;
 
     margin-bottom: 20px;
+
+    font-size: 30px;
+    font-style: italic;
+    line-height: 26px;
 
     vertical-align: top;
 
@@ -3490,20 +3502,22 @@ header.fixed .menu_item > a
 .boss_quote
 {
     position: relative;
-    z-index: 3;
 
     padding-top: 221px;
+
+    z-index: 3;
 }
 
 
 .boss_quote .data
 {
     position: relative;
-    z-index: 3;
 
     width: 705px;
     max-width: 100%;
     padding: 80px 95px 85px 105px;
+
+    z-index: 3;
 
     color: #fff;
     background: #2a3c7b;
@@ -3531,11 +3545,11 @@ header.fixed .menu_item > a
 
 .boss_quote .data .quote
 {
+    position: relative;
+
     font-size: 20px;
     font-style: italic;
     line-height: 30px;
-
-    position: relative;
 }
 
 .boss_quote .data .quote:before,
@@ -3568,9 +3582,9 @@ header.fixed .menu_item > a
 
 .boss_quote .data .author
 {
-    font-style: italic;
-
     margin-top: 35px;
+
+    font-style: italic;
 }
 
 
@@ -3592,12 +3606,12 @@ header.fixed .menu_item > a
 .boss_quote .photo
 {
     position: absolute;
-    z-index: 1;
     bottom: 50px;
     left: 50%;
 
     margin-left: 75px;
 
+    z-index: 1;
     pointer-events: none;
 }
 
@@ -3797,7 +3811,6 @@ header.fixed .menu_item > a
 .articles .article .thumb img
 {
     position: absolute;
-    z-index: 1;
     top: 0;
     left: 0;
 
@@ -3806,6 +3819,7 @@ header.fixed .menu_item > a
     width: 100%;
     height: 100%;
 
+    z-index: 1;
     transition: filter .2s linear;
 
     object-fit: cover;
@@ -3815,16 +3829,16 @@ header.fixed .menu_item > a
 
 .articles .article .date
 {
-    font-size: 14px;
-    line-height: 22px;
-
     position: absolute;
-    z-index: 3;
     bottom: 0;
     left: 0;
 
     padding: 6px 15px;
 
+    font-size: 14px;
+    line-height: 22px;
+
+    z-index: 3;
     white-space: nowrap;
 
     color: #fff;
@@ -3859,10 +3873,10 @@ header.fixed .menu_item > a
 
 .articles .article .desc
 {
+    margin-top: 20px;
+
     font-size: 14px;
     line-height: 22px;
-
-    margin-top: 20px;
 }
 
 
@@ -3917,10 +3931,10 @@ header.fixed .menu_item > a
 
 .get_consult .block_title
 {
+    margin-bottom: 40px;
+
     font-size: 30px;
     line-height: 40px;
-
-    margin-bottom: 40px;
 
     text-align: center;
 }
@@ -3967,10 +3981,10 @@ header.fixed .menu_item > a
 
 .advantages .item
 {
+    padding: 30px 25px;
+
     font-style: italic;
     line-height: 24px;
-
-    padding: 30px 25px;
 
     text-align: center;
 }
@@ -4022,12 +4036,13 @@ header.fixed .menu_item > a
 .persons .person .photo
 {
     position: relative;
-    z-index: 3;
 
     align-self: flex-end;
 
     width: 630px;
     max-width: 100%;
+
+    z-index: 3;
 }
 
 .persons .person .photo img
@@ -4059,7 +4074,6 @@ header.fixed .menu_item > a
 .persons .person .data:before
 {
     position: absolute;
-    z-index: 1;
     top: 0;
     left: 50%;
 
@@ -4070,6 +4084,7 @@ header.fixed .menu_item > a
     margin-left: -35px;
 
     content: '';
+    z-index: 1;
 
     background: #f6f6f6;
 }
@@ -4086,10 +4101,11 @@ header.fixed .menu_item > a
 
 .persons .person .name
 {
+    position: relative;
+
     font-size: 30px;
     line-height: 40px;
 
-    position: relative;
     z-index: 2;
 }
 
@@ -4118,25 +4134,27 @@ header.fixed .menu_item > a
 
 .persons .person .post
 {
+    position: relative;
+
+    margin-top: 10px;
+
     font-style: italic;
     line-height: 26px;
 
-    position: relative;
     z-index: 2;
-
-    margin-top: 10px;
 }
 
 
 .persons .person .contacts
 {
-    line-height: 26px;
-
     position: relative;
-    z-index: 2;
 
     margin-top: 35px;
     padding-top: 35px;
+
+    line-height: 26px;
+
+    z-index: 2;
 
     border-top: 1px solid #d3d3d3;
 }
@@ -4201,9 +4219,10 @@ header.fixed .menu_item > a
 .persons .person .desc
 {
     position: relative;
-    z-index: 2;
 
     margin-top: 30px;
+
+    z-index: 2;
 }
 
 
@@ -4347,7 +4366,7 @@ header.fixed .menu_item > a
 .certs .item .thumb img
 {
     position: absolute;
-    z-index: 1;
+    inset: 0;
 
     display: block;
 
@@ -4355,10 +4374,10 @@ header.fixed .menu_item > a
     height: calc(100% - 18px);
     margin: auto;
 
+    z-index: 1;
     transition: filter .2s linear;
 
     filter: grayscale(100%);
-    inset: 0;
     object-fit: cover;
 }
 
@@ -4366,7 +4385,6 @@ header.fixed .menu_item > a
 .certs .item .thumb .icon
 {
     position: absolute;
-    z-index: 3;
     bottom: 0;
     left: 0;
 
@@ -4379,6 +4397,7 @@ header.fixed .menu_item > a
     width: 79px;
     height: 79px;
 
+    z-index: 3;
     transition: opacity .2s linear;
 
     opacity: 0;
@@ -4469,11 +4488,12 @@ header.fixed .menu_item > a
 .videos .video .thumb
 {
     position: relative;
-    z-index: 2;
 
     overflow: hidden;
 
     padding-bottom: 63.875%;
+
+    z-index: 2;
 
     background: #ddd;
 }
@@ -4482,7 +4502,6 @@ header.fixed .menu_item > a
 .videos .video .thumb img
 {
     position: absolute;
-    z-index: 1;
     top: 0;
     left: 0;
 
@@ -4491,6 +4510,8 @@ header.fixed .menu_item > a
     width: 100%;
     height: 100%;
 
+    z-index: 1;
+
     filter: grayscale(100%);
     object-fit: cover;
 }
@@ -4498,11 +4519,7 @@ header.fixed .menu_item > a
 
 .videos .video .btn
 {
-    font-size: 14px;
-    line-height: 22px;
-
     position: absolute;
-    z-index: 3;
     bottom: 0;
     left: 0;
 
@@ -4510,6 +4527,10 @@ header.fixed .menu_item > a
     max-width: 100%;
     padding: 24px 20px 16px;
 
+    font-size: 14px;
+    line-height: 22px;
+
+    z-index: 3;
     transition: .2s linear;
     text-align: center;
 
@@ -4550,7 +4571,6 @@ header.fixed .menu_item > a
 .person_info:before
 {
     position: absolute;
-    z-index: 1;
     right: 50%;
     bottom: 0;
 
@@ -4561,6 +4581,7 @@ header.fixed .menu_item > a
     margin-right: -355px;
 
     content: '';
+    z-index: 1;
 
     background: #f6f6f6;
 }
@@ -4569,11 +4590,12 @@ header.fixed .menu_item > a
 .person_info .cont
 {
     position: relative;
-    z-index: 3;
 
     align-content: stretch;
     align-items: stretch;
     justify-content: space-between;
+
+    z-index: 3;
 }
 
 
@@ -4589,13 +4611,14 @@ header.fixed .menu_item > a
 
 .person_info .contacts
 {
-    line-height: 26px;
-
     position: relative;
-    z-index: 2;
 
     margin-top: 35px;
     padding-top: 35px;
+
+    line-height: 26px;
+
+    z-index: 2;
 }
 
 .person_info .contacts:before
@@ -4753,9 +4776,6 @@ header.fixed .menu_item > a
 
 .person_info .business_card .name
 {
-    font-size: 14px;
-    line-height: 18px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -4764,6 +4784,9 @@ header.fixed .menu_item > a
 
     margin-left: 10px;
     padding: 20px;
+
+    font-size: 14px;
+    line-height: 18px;
 
     transition: .2s linear;
 
@@ -4782,12 +4805,13 @@ header.fixed .menu_item > a
 .person_info .photo
 {
     position: relative;
-    z-index: 3;
 
     align-self: flex-end;
 
     width: 435px;
     max-width: 100%;
+
+    z-index: 3;
 }
 
 .person_info .photo img
@@ -4919,22 +4943,23 @@ header.fixed .menu_item > a
 
 .specialists .person .post
 {
+    margin-top: 10px;
+
     font-style: italic;
     line-height: 26px;
-
-    margin-top: 10px;
 }
 
 
 .specialists .person .contacts
 {
-    line-height: 26px;
-
     position: relative;
-    z-index: 2;
 
     margin-top: 35px;
     padding-top: 35px;
+
+    line-height: 26px;
+
+    z-index: 2;
 
     border-top: 1px solid #d3d3d3;
 }
@@ -5029,28 +5054,28 @@ header.fixed .menu_item > a
 
 .branches .tabs .name
 {
+    width: 100%;
+    margin-bottom: 15px;
+
     font-size: 18px;
     font-weight: 700;
     font-style: italic;
     line-height: 28px;
-
-    width: 100%;
-    margin-bottom: 15px;
 }
 
 
 .branches .tabs .contacts
 {
-    line-height: 26px;
-
     position: relative;
-    z-index: 2;
 
     flex: 1 0 auto;
 
     width: 100%;
     padding: 22px 21px;
 
+    line-height: 26px;
+
+    z-index: 2;
     transition: .2s linear;
 
     border: 3px solid #f6f6f6;
@@ -5161,11 +5186,7 @@ header.fixed .menu_item > a
 
 .free_consult .online
 {
-    font-size: 13px;
-    line-height: 162%;
-
     position: absolute;
-    z-index: 3;
     top: 0;
     left: 0;
 
@@ -5177,6 +5198,11 @@ header.fixed .menu_item > a
 
     width: 143px;
     height: 67px;
+
+    font-size: 13px;
+    line-height: 162%;
+
+    z-index: 3;
 
     color: #fff;
     background: #2a3c7b;
@@ -5206,10 +5232,10 @@ header.fixed .menu_item > a
 
 .free_consult .title
 {
+    margin-bottom: 20px;
+
     font-size: 34px;
     font-weight: 400;
-
-    margin-bottom: 20px;
 
     text-align: center;
 
@@ -5219,10 +5245,10 @@ header.fixed .menu_item > a
 
 .free_consult .title small
 {
+    display: block;
+
     font-size: 29px;
     font-style: italic;
-
-    display: block;
 }
 
 
@@ -5242,14 +5268,14 @@ header.fixed .menu_item > a
 
 .free_consult .features .item
 {
-    font-size: 13px;
-    line-height: 162%;
-
     display: flex;
     align-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: flex-start;
+
+    font-size: 13px;
+    line-height: 162%;
 }
 
 
@@ -5391,10 +5417,10 @@ header.fixed .menu_item > a
 
 .free_consult .form .input
 {
-    font-size: var(--font_size);
-
     height: 42px;
     padding: 0 14px;
+
+    font-size: var(--font_size);
 
     border: 1px solid var(--form_border_color);
 }
@@ -5402,11 +5428,11 @@ header.fixed .menu_item > a
 
 .free_consult .form textarea
 {
-    font-size: var(--font_size);
-    line-height: 120%;
-
     height: 89px;
     padding: 22px 24px;
+
+    font-size: var(--font_size);
+    line-height: 120%;
 
     border: 1px solid var(--form_border_color);
 }
@@ -5422,10 +5448,10 @@ header.fixed .menu_item > a
 
 .free_consult .form .checkbox
 {
+    padding-left: 41px;
+
     font-size: 11px;
     line-height: 123%;
-
-    padding-left: 41px;
 
     color: #898989;
 }
@@ -5480,7 +5506,6 @@ header.fixed .menu_item > a
 .free_consult .img1
 {
     position: absolute;
-    z-index: 1;
     top: 0;
     left: 0;
 
@@ -5488,6 +5513,7 @@ header.fixed .menu_item > a
 
     height: 100%;
 
+    z-index: 1;
     pointer-events: none;
 
     object-fit: cover;
@@ -5497,7 +5523,6 @@ header.fixed .menu_item > a
 .free_consult .img2
 {
     position: absolute;
-    z-index: 2;
     bottom: -56px;
     left: -20px;
 
@@ -5505,6 +5530,7 @@ header.fixed .menu_item > a
 
     width: 654px;
 
+    z-index: 2;
     pointer-events: none;
 }
 
@@ -5546,10 +5572,10 @@ header.fixed .menu_item > a
 
 .service_info .services .title
 {
+    margin-bottom: 13px;
+
     font-size: 24px;
     font-weight: 600;
-
-    margin-bottom: 13px;
 
     text-align: center;
 
@@ -5659,10 +5685,6 @@ header.fixed .menu_item > a
 
 .service_info .services .list .main a
 {
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 130%;
-
     position: relative;
 
     display: flex;
@@ -5675,6 +5697,10 @@ header.fixed .menu_item > a
     min-height: 60px;
     margin-left: auto;
     padding: 7px 11px 7px 48px;
+
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 130%;
 
     transition: .2s linear;
     text-decoration: none;
@@ -5734,14 +5760,14 @@ header.fixed .menu_item > a
 
 .service_info .services .list .sub a
 {
-    font-size: 15px;
-    line-height: 130%;
-
     position: relative;
 
     display: block;
 
     padding: 6px 19px 2px 56px;
+
+    font-size: 15px;
+    line-height: 130%;
 
     transition: .2s linear;
     text-decoration: none;
@@ -5793,10 +5819,10 @@ header.fixed .menu_item > a
 
 .service_info .callback_form .title
 {
+    padding: 18px;
+
     font-size: 24px;
     font-weight: 600;
-
-    padding: 18px;
 
     text-align: center;
 
@@ -5807,10 +5833,10 @@ header.fixed .menu_item > a
 
 .service_info .callback_form .desc
 {
+    margin-bottom: 13px;
+
     font-size: 15px;
     line-height: 130%;
-
-    margin-bottom: 13px;
 
     text-align: center;
 
@@ -5837,10 +5863,10 @@ header.fixed .menu_item > a
 
 .service_info .callback_form .form .input
 {
-    font-size: var(--font_size);
-
     height: 48px;
     padding: 0 16px;
+
+    font-size: var(--font_size);
 
     border: 1px solid var(--form_border_color);
 }
@@ -5890,15 +5916,15 @@ header.fixed .menu_item > a
 
 .service_info .callback_form .form .submit_btn
 {
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 162%;
-
     display: block;
 
     width: 100%;
     height: 38px;
     padding: 2px 0 0;
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 162%;
 
     transition: background .2s linear;
     text-transform: uppercase;
@@ -5920,8 +5946,6 @@ header.fixed .menu_item > a
 ----------------------*/
 .content_contacts
 {
-    line-height: normal;
-
     position: relative;
 
     display: flex;
@@ -5932,6 +5956,8 @@ header.fixed .menu_item > a
 
     padding: 18px;
 
+    line-height: normal;
+
     border: 2px solid #2a3c7b;
     background: #f6f6f6;
     box-shadow: inset 0 0 0 5px var(--bg);
@@ -5940,12 +5966,12 @@ header.fixed .menu_item > a
 
 .content_contacts .btn
 {
+    height: 38px;
+    padding: 4px 30px 0;
+
     font-size: 12px;
     font-weight: 700;
     line-height: 162%;
-
-    height: 38px;
-    padding: 4px 30px 0;
 
     transition: background .2s linear;
     text-transform: uppercase;
@@ -5963,10 +5989,10 @@ header.fixed .menu_item > a
 
 .content_contacts .label
 {
+    margin-left: 52px;
+
     font-size: 16px;
     font-style: italic;
-
-    margin-left: 52px;
 
     text-align: center;
 
@@ -5976,11 +6002,11 @@ header.fixed .menu_item > a
 
 .content_contacts .phone
 {
+    margin-left: 60px;
+
     font-size: 26px;
     font-weight: 600;
     font-style: italic;
-
-    margin-left: 60px;
 
     white-space: nowrap;
 
@@ -5999,7 +6025,6 @@ header.fixed .menu_item > a
 .content_contacts .img
 {
     position: absolute;
-    z-index: 3;
     right: -14px;
     bottom: -9px;
 
@@ -6007,6 +6032,7 @@ header.fixed .menu_item > a
 
     width: 260px;
 
+    z-index: 3;
     pointer-events: none;
 }
 
@@ -6025,11 +6051,11 @@ header.fixed .menu_item > a
 
 .service_steps .block_title
 {
+    margin-bottom: 7px;
+
     font-size: 30px;
     font-weight: 400;
     line-height: normal;
-
-    margin-bottom: 7px;
 
     text-align: center;
 }
@@ -6037,10 +6063,10 @@ header.fixed .menu_item > a
 
 .service_steps .block_desc
 {
+    margin-bottom: 32px;
+
     font-size: 20px;
     line-height: 162%;
-
-    margin-bottom: 32px;
 
     text-align: center;
 }
@@ -6072,11 +6098,11 @@ header.fixed .menu_item > a
 
 .service_steps .item .number
 {
+    margin-bottom: 11px;
+
     font-size: 29px;
     font-style: italic;
     line-height: 130%;
-
-    margin-bottom: 11px;
 
     color: #000;
 }
@@ -6103,11 +6129,11 @@ header.fixed .menu_item > a
 
 .service_advantages .block_title
 {
+    margin-bottom: 30px;
+
     font-size: 30px;
     font-weight: 400;
     line-height: normal;
-
-    margin-bottom: 30px;
 
     text-align: center;
 }
@@ -6139,11 +6165,11 @@ header.fixed .menu_item > a
 
 .service_advantages .item .number
 {
+    margin-bottom: 11px;
+
     font-size: 29px;
     font-style: italic;
     line-height: 130%;
-
-    margin-bottom: 11px;
 
     color: #000;
 }
@@ -6186,15 +6212,16 @@ header.fixed .menu_item > a
 
 .action_block .info
 {
-    font-size: 18px;
-    line-height: 145.45%;
-
     position: relative;
-    z-index: 3;
 
     width: 666px;
     max-width: 100%;
     padding: 42px;
+
+    font-size: 18px;
+    line-height: 145.45%;
+
+    z-index: 3;
 
     color: #2a3c7b;
 }
@@ -6244,13 +6271,13 @@ header.fixed .menu_item > a
 
 .action_block .btn
 {
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 162%;
-
     height: 38px;
     margin-top: 14px;
     padding: 4px 28px 0;
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 162%;
 
     transition: background .2s linear;
     text-transform: uppercase;
@@ -6269,7 +6296,6 @@ header.fixed .menu_item > a
 .action_block .img
 {
     position: absolute;
-    z-index: 1;
     right: 0;
     bottom: 0;
 
@@ -6277,6 +6303,7 @@ header.fixed .menu_item > a
 
     height: 100%;
 
+    z-index: 1;
     pointer-events: none;
 }
 
@@ -6328,10 +6355,10 @@ header.fixed .menu_item > a
 
 .action_form .desc
 {
+    margin-top: 15px;
+
     font-size: 18px;
     line-height: 145.45%;
-
-    margin-top: 15px;
 
     color: #2a3c7b;
 }
@@ -6362,10 +6389,10 @@ header.fixed .menu_item > a
 
 .action_form .form .input
 {
-    font-size: var(--font_size);
-
     height: 48px;
     padding: 2px 12px 0;
+
+    font-size: var(--font_size);
 
     border: 1px solid var(--form_border_color);
 
@@ -6375,12 +6402,12 @@ header.fixed .menu_item > a
 
 .action_form .form textarea
 {
-    font-size: var(--font_size);
-    line-height: 162%;
-
     height: 74px;
     min-height: 74px;
     padding: 10px 12px;
+
+    font-size: var(--font_size);
+    line-height: 162%;
 
     border: 1px solid var(--form_border_color);
 }
@@ -6428,13 +6455,13 @@ header.fixed .menu_item > a
 
 .action_form .person .name
 {
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 162%;
-
     width: 100%;
     margin-top: 22px;
     padding-right: 42px;
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 162%;
 
     text-align: right;
 }
@@ -6442,12 +6469,12 @@ header.fixed .menu_item > a
 
 .action_form .person .post
 {
+    width: 100%;
+    padding-right: 42px;
+
     font-size: 14px;
     font-style: italic;
     line-height: 162%;
-
-    width: 100%;
-    padding-right: 42px;
 
     text-align: right;
 }
@@ -6522,10 +6549,10 @@ footer .logo img
 
 footer .copyright
 {
+    margin-top: auto;
+
     font-size: 13px;
     line-height: 20px;
-
-    margin-top: auto;
 
     color: #898989;
 }
@@ -6540,11 +6567,11 @@ footer .copyright > * + *
 
 footer .title
 {
+    margin-bottom: 20px;
+
     font-size: 30px;
     font-weight: 700;
     line-height: 40px;
-
-    margin-bottom: 20px;
 
     color: #d3d3d3;
 }
@@ -6608,10 +6635,10 @@ footer .services_links .items > *:nth-child(2n)
 
 footer .services_links .items a
 {
+    display: inline-block;
+
     font-size: 14px;
     line-height: 20px;
-
-    display: inline-block;
 
     transition: color .2s linear;
     vertical-align: top;
@@ -6649,10 +6676,10 @@ footer .menu > *
 
 footer .menu a
 {
+    display: inline-block;
+
     font-size: 18px;
     line-height: 22px;
-
-    display: inline-block;
 
     transition: color .2s linear;
     vertical-align: top;
@@ -6671,10 +6698,10 @@ footer .menu a.active
 
 footer .privacy_policy_link
 {
+    margin-top: auto;
+
     font-size: 13px;
     line-height: 20px;
-
-    margin-top: auto;
 }
 
 
@@ -6719,9 +6746,6 @@ footer .phone a
 
 footer .callback_btn
 {
-    font-size: 14px;
-    line-height: 22px;
-
     display: flex;
     align-content: center;
     align-items: center;
@@ -6729,6 +6753,9 @@ footer .callback_btn
     justify-content: flex-start;
 
     margin-left: 28px;
+
+    font-size: 14px;
+    line-height: 22px;
 
     transition: color .2s linear;
     text-decoration: underline;
@@ -6756,10 +6783,10 @@ footer .callback_btn:hover
 
 footer .location
 {
+    margin-top: 20px;
+
     font-size: 14px;
     line-height: 22px;
-
-    margin-top: 20px;
 
     color: #898989;
 }
@@ -6833,10 +6860,10 @@ footer .socials a:hover
 
 footer .creator
 {
+    margin-top: auto;
+
     font-size: 13px;
     line-height: 20px;
-
-    margin-top: auto;
 
     color: #898989;
 }
@@ -6887,11 +6914,11 @@ footer .creator a:hover span
 
 .modal_title
 {
+    margin-bottom: 40px;
+
     font-size: 30px;
     font-weight: 400;
     line-height: 40px;
-
-    margin-bottom: 40px;
 
     text-align: center;
 }
