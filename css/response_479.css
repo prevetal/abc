@@ -252,4 +252,41 @@
         margin-right: 0;
         margin-left: 0;
     }
+
+
+
+    /*----------------
+        Intresting
+    ----------------*/
+    .intresting .row
+    {
+        margin-bottom: -12px;
+        margin-left: 0;
+    }
+
+
+    .intresting .row > *
+    {
+        width: 100%;
+        margin-bottom: 12px;
+        margin-left: 0;
+    }
+
+
+    .intresting .title
+    {
+        width: 100%;
+    }
+
+
+    .intresting .link
+    {
+        min-height: 0;
+    }
+
+
+    .intresting .all
+    {
+        width: 100%;
+    }
 }

@@ -1257,6 +1257,172 @@
 
 
 
+    /*----------------
+        Intresting
+    ----------------*/
+    .intresting
+    {
+        padding-top: 0;
+    }
+
+
+    .intresting .row > *
+    {
+        width: calc(50% - 16px);
+    }
+
+
+    .intresting .title
+    {
+        width: calc(100% - 16px);
+    }
+
+
+    .intresting .picture
+    {
+        display: none;
+    }
+
+
+    .intresting .row .empty
+    {
+        display: none;
+    }
+
+
+    .intresting .link
+    {
+        min-height: 124px;
+        padding: 19px;
+    }
+
+
+    .intresting .link:nth-child(6)
+    {
+        justify-content: flex-start;
+    }
+
+
+    .intresting .all
+    {
+        align-content: center;
+        align-items: center;
+
+        width: calc(100% - 16px);
+        padding: 0;
+
+        border: none;
+    }
+
+
+
+    /*------------------
+        Person2 info
+    ------------------*/
+    .person2_info .data:before
+    {
+        height: 348px;
+    }
+
+
+    .person2_info .photo
+    {
+        width: auto;
+        height: 300px;
+        margin-inline: auto;
+    }
+
+
+    .person2_info .photo img
+    {
+        width: auto;
+        height: 100%;
+    }
+
+
+    .person2_info .contacts
+    {
+        width: 100%;
+        margin-top: 24px;
+        margin-left: 0;
+    }
+
+
+    .person2_info .business_card
+    {
+        margin-top: 24px;
+    }
+
+
+    .person2_info .business_card .name
+    {
+        width: calc(100% - 90px);
+    }
+
+
+
+    /*-----------------
+        Person desc
+    -----------------*/
+    .person_desc
+    {
+        margin-bottom: 60px;
+    }
+
+
+    .person_desc .text_block
+    {
+        overflow: hidden;
+
+        height: 280px;
+        padding-bottom: 48px;
+    }
+
+
+    .person_desc .text_block:after
+    {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        display: block;
+
+        width: 100%;
+        height: 100%;
+
+        content: '';
+        z-index: 2;
+
+        background: linear-gradient(to bottom, rgba(255,255,255,0), #fff 80%);
+    }
+
+
+    .person_desc .text_block.show
+    {
+        height: auto;
+    }
+
+
+    .person_desc .text_block.show:after
+    {
+        display: none;
+    }
+
+
+    .person_desc .mob
+    {
+        height: auto;
+        padding: 0;
+    }
+
+
+    .person_desc .mob:after
+    {
+        display: none;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

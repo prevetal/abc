@@ -1163,6 +1163,148 @@
 
 
 
+    /*--------------------
+        Other services
+    --------------------*/
+    .other_services .title
+    {
+        margin-bottom: 24px;
+
+        font-size: 28px;
+    }
+
+
+    .other_services .desc
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .other_services .items .icon
+    {
+        width: 48px;
+    }
+
+
+    .other_services .items .icon + *
+    {
+        width: calc(100% - 48px);
+        min-height: 40px;
+        padding: 8px 12px;
+    }
+
+
+
+    /*----------------
+        Intresting
+    ----------------*/
+    .intresting
+    {
+        padding-top: 40px;
+    }
+
+
+    .intresting .title
+    {
+        font-size: 28px;
+    }
+
+
+    .intresting .photo
+    {
+        width: 100%;
+    }
+
+
+    .intresting .link
+    {
+        min-height: 140px;
+        padding: 23px;
+    }
+
+
+    .intresting .all
+    {
+        padding: 23px;
+    }
+
+
+    .intresting .all .btn
+    {
+        height: 44px;
+        padding-inline: 19px;
+    }
+
+
+
+    /*------------------
+        Person2 info
+    ------------------*/
+    .person2_info.block
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .person2_info .data
+    {
+        justify-content: flex-start;
+
+        padding-block: 48px 0;
+    }
+
+
+    .person2_info .data:before
+    {
+        top: 0;
+        bottom: auto;
+
+        width: 100%;
+        height: 349px;
+    }
+
+
+    .person2_info .photo
+    {
+        width: 320px;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+
+    .person2_info .contacts
+    {
+        width: 280px;
+        margin-left: 48px;
+    }
+
+
+    .person2_info .desc
+    {
+        display: none;
+
+        width: 100%;
+        margin-top: 48px;
+    }
+
+
+
+    /*-----------------
+        Person desc
+    -----------------*/
+    .person_desc
+    {
+        margin-bottom: 70px;
+    }
+
+
+    .person_desc .mob
+    {
+        display: block;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

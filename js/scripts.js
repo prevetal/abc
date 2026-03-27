@@ -530,6 +530,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		$(this).closest('.main').toggleClass('active').next().slideToggle(300)
 	})
+
+
+	// Вас также может заинтересовать
+	$('.intresting .all .btn').click(function(e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active').closest('.row').toggleClass('show_all')
+	})
+
+
+	// Person 2
+	$('.person_desc .spoler_btn').click(function(e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active').closest('.text_block').toggleClass('show')
+	})
 })
 
 
