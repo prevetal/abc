@@ -955,6 +955,80 @@
 
 
 
+    /*----------------
+        Intresting
+    ----------------*/
+    .intresting
+    {
+        padding-top: 40px;
+    }
+
+
+    .intresting .title
+    {
+        padding-block: 16px 8px;
+    }
+
+
+    .intresting .photo
+    {
+        width: calc(100% - 48px);
+    }
+
+
+    .intresting .link
+    {
+        min-height: 140px;
+        padding: 23px;
+    }
+
+
+    .intresting .all
+    {
+        padding: 23px;
+    }
+
+
+    .intresting .all .btn
+    {
+        height: 48px;
+        padding-inline: 19px;
+    }
+
+
+
+    /*------------------
+        Person2 info
+    ------------------*/
+    .person2_info .data:before
+    {
+        width: calc(100% - 240px);
+    }
+
+
+    .person2_info .photo
+    {
+        width: 400px;
+    }
+
+
+    .person2_info .contacts
+    {
+        width: 272px;
+        margin-left: 64px;
+
+        gap: 12px;
+    }
+
+
+    .person2_info .desc
+    {
+        width: calc(100% - 828px);
+        margin-right: 0;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

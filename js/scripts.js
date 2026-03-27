@@ -530,6 +530,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		$(this).closest('.main').toggleClass('active').next().slideToggle(300)
 	})
+
+
+	// Вас также может заинтересовать
+	$('.intresting .all .btn').click(function(e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active').closest('.row').toggleClass('show_all')
+	})
 })
 
 

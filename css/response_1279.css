@@ -1113,6 +1113,73 @@
 
 
 
+    /*----------------
+        Intresting
+    ----------------*/
+    .intresting
+    {
+        padding-top: 51px;
+    }
+
+
+    .intresting .photo
+    {
+        width: calc(100% - 64px);
+    }
+
+
+    .intresting .link
+    {
+        min-height: 160px;
+        padding: 31px;
+    }
+
+
+    .intresting .all
+    {
+        padding: 31px;
+    }
+
+
+    .intresting .all .btn
+    {
+        padding-inline: 23px;
+    }
+
+
+
+    /*------------------
+        Person2 info
+    ------------------*/
+    .person2_info .data:before
+    {
+        width: calc(100% - 260px);
+    }
+
+
+    .person2_info .photo
+    {
+        width: 360px;
+        margin-right: -40px;
+    }
+
+
+    .person2_info .contacts
+    {
+        align-self: flex-start;
+
+        width: 248px;
+        margin-left: 0;
+    }
+
+
+    .person2_info .desc
+    {
+        width: calc(100% - 632px);
+    }
+
+
+
     /*------------
         Footer
     ------------*/

@@ -1257,6 +1257,116 @@
 
 
 
+    /*----------------
+        Intresting
+    ----------------*/
+    .intresting
+    {
+        padding-top: 0;
+    }
+
+
+    .intresting .row > *
+    {
+        width: calc(50% - 16px);
+    }
+
+
+    .intresting .title
+    {
+        width: calc(100% - 16px);
+    }
+
+
+    .intresting .picture
+    {
+        display: none;
+    }
+
+
+    .intresting .row .empty
+    {
+        display: none;
+    }
+
+
+    .intresting .link
+    {
+        min-height: 124px;
+        padding: 19px;
+    }
+
+
+    .intresting .link:nth-child(6)
+    {
+        justify-content: flex-start;
+    }
+
+
+    .intresting .all
+    {
+        align-content: center;
+        align-items: center;
+
+        width: calc(100% - 16px);
+        padding: 0;
+
+        border: none;
+    }
+
+
+
+    /*------------------
+        Person2 info
+    ------------------*/
+    .person2_info .data:before
+    {
+        height: 348px;
+    }
+
+
+    .person2_info .photo
+    {
+        width: auto;
+        height: 300px;
+        margin-inline: auto;
+    }
+
+
+    .person2_info .photo img
+    {
+        width: auto;
+        height: 100%;
+    }
+
+
+    .person2_info .contacts
+    {
+        width: 100%;
+        margin-top: 24px;
+        margin-left: 0;
+    }
+
+
+    .person2_info .business_card
+    {
+        margin-top: 24px;
+    }
+
+
+    .person2_info .business_card .name
+    {
+        width: calc(100% - 90px);
+    }
+
+
+    .person2_info .desc
+    {
+        margin-top: 24px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
