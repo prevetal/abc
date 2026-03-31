@@ -1240,6 +1240,12 @@
     /*------------------
         Person2 info
     ------------------*/
+    .person2_info.block
+    {
+        margin-bottom: 40px;
+    }
+
+
     .person2_info .data
     {
         justify-content: flex-start;
@@ -1275,8 +1281,26 @@
 
     .person2_info .desc
     {
+        display: none;
+
         width: 100%;
         margin-top: 48px;
+    }
+
+
+
+    /*-----------------
+        Person desc
+    -----------------*/
+    .person_desc
+    {
+        margin-bottom: 70px;
+    }
+
+
+    .person_desc .mob
+    {
+        display: block;
     }
 
 

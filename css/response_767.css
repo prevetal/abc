@@ -1360,9 +1360,65 @@
     }
 
 
-    .person2_info .desc
+
+    /*-----------------
+        Person desc
+    -----------------*/
+    .person_desc
     {
-        margin-top: 24px;
+        margin-bottom: 60px;
+    }
+
+
+    .person_desc .text_block
+    {
+        overflow: hidden;
+
+        height: 280px;
+        padding-bottom: 48px;
+    }
+
+
+    .person_desc .text_block:after
+    {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        display: block;
+
+        width: 100%;
+        height: 100%;
+
+        content: '';
+        z-index: 2;
+
+        background: linear-gradient(to bottom, rgba(255,255,255,0), #fff 80%);
+    }
+
+
+    .person_desc .text_block.show
+    {
+        height: auto;
+    }
+
+
+    .person_desc .text_block.show:after
+    {
+        display: none;
+    }
+
+
+    .person_desc .mob
+    {
+        height: auto;
+        padding: 0;
+    }
+
+
+    .person_desc .mob:after
+    {
+        display: none;
     }
 
 

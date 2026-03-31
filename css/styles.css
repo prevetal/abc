@@ -6933,17 +6933,8 @@ header.fixed .menu_item > a
     font-size: 14px;
     line-height: 18px;
 
-    transition: .2s linear;
-
     color: #fff;
     background: #2a3c7b;
-}
-
-
-.person2_info .business_card:hover .name
-{
-    color: #2a3c7b;
-    background: #f6f6f6;
 }
 
 
@@ -6968,6 +6959,20 @@ header.fixed .menu_item > a
 }
 
 
+.person_desc .mob
+{
+    display: none;
+
+    margin-top: 40px;
+}
+
+
+.person_desc .text_block
+{
+    position: relative;
+}
+
+
 .person_desc .text_block h2,
 .person_desc .text_block h3
 {
@@ -6985,6 +6990,43 @@ header.fixed .menu_item > a
 .person_desc .text_block * + h3
 {
     margin-top: 40px;
+}
+
+
+.person_desc .spoler_btn
+{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    display: block;
+
+    padding: 10px 18px;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: calc(100% + 6px);
+
+    z-index: 3;
+    transition: .2s linear;
+    transform: translateX(-50%);
+    white-space: nowrap;
+
+    color: #2a3c7b;
+    border: 2px solid #2a3c7b;
+}
+
+
+.person_desc .spoler_btn span + span,
+.person_desc .spoler_btn.active span
+{
+    display: none;
+}
+
+
+.person_desc .spoler_btn.active span + span
+{
+    display: block;
 }
 
 
